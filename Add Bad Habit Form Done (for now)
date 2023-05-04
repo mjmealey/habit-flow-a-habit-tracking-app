@@ -1,0 +1,114 @@
+ <form id="badHabitsForm" method="get">
+      <p>* indicates required field below</p>
+      <span class="required" aria-label="required">*</span>
+      <label
+        id="badHabitCategoriesLabel"
+        class="badHabitCategoryContent"
+        for="badHabitCategories"
+        >Category:</label
+      >
+      <select id="badHabitCategories" class="badHabitCategoryContent" required>
+        <option value="select" class="badHabitCategoryOption">Select</option>
+        <option value="alcoholism" class="badHabitCategoryOption">
+          Alcoholism
+        </option>
+        <option value="unhealthyEating" class="badHabitCategoryOption">
+          Unhealthy Eating
+        </option>
+        <option value="poorHygeine" class="badHabitCategoryOption">
+          Poor Hygeine
+        </option>
+        <option value="drugs" class="badHabitCategoryOption">Drugs</option>
+        <option value="procrastination" class="badHabitCategoryOption">
+          Procrastination
+        </option>
+        <option value="smoking" class="badHabitCategoryOption">Smoking</option>
+        <option value="videoGameAddiction" class="badHabitCategoryOption">
+          Video Game Addiction
+        </option>
+        <option value="nail-biting" class="badHabitCategoryOption">
+          Social Media Addiction
+        </option>
+        <option value="laziness" class="badHabitCategoryOption">
+          Laziness
+        </option>
+        <option value="lying" class="badHabitCategoryOption">Lying</option>
+        <option value="hoarding" class="badHabitCategoryOption">
+          Hoarding
+        </option>
+        <option value="negativeSelfTalk" class="badHabitCategoryOption">
+          Negative self-talk
+        </option>
+        <option value="nailBiting" class="badHabitCategoryOption">
+          Nail-Biting
+        </option>
+        <option value="other" class="badHabitCategoryOption">Other</option>
+      </select>
+      <button
+        id="badHabitCategoriesAdditionalInfo"
+        class="additionalInfo"
+        type="button"
+      >
+        ?
+      </button>
+      <span class="required" aria-label="required">*</span>
+      <label for="badHabitFrequency" id="badHabitFrequencyLabel"
+        >What is the frequency of this bad habit?</label
+      >
+      <select for="badHabitFrequency" required>
+        <option value="select" class="badHabitFrequencyOption">Select</option>
+        <option value="daily" class="badHabitFrequencyOption">Daily</option>
+        <option value="weekly" class="badHabitFrequencyOption">Weekly</option>
+        <option value="everyTwoWeeks" class="badHabitFrequencyOption">
+          Every 2 Weeks
+        </option>
+        <option value="everyThreeWeeks" class="badHabitFrequencyOption">
+          Every 3 Weeks
+        </option>
+        <option value="onceaMonth" class="badHabitFrequencyOption">
+          Once a Month
+        </option>
+        <option value="other" class="badHabitFrequencyOption">Other</option>
+      </select>
+      <button
+        id="badHabitFrequencyAdditionalInfo"
+        class="additionalInfo"
+        type="button"
+      >
+        ?
+      </button>
+
+      <label
+        for="badHabitPriority"
+        id="badHabitPriorityLabel"
+        class="badHabitPriorityContent"
+        >What is your priority level in ridding yourself of this bad
+        habit?</label
+      >
+      <select for="badHabitPriority" required>
+        <option value="select" class="badHabitPriorityOption">Select</option>
+        <option value="topPriority" class="badHabitPriorityOption">
+          Top Priority
+        </option>
+        <option value="highPriority" class="badHabitPriorityOption">
+          High Priority
+        </option>
+        <option value="standardPriority" class="badHabitPriorityOption">
+          Standard Priority
+        </option>
+        <option value="lowPriority" class="badHabitPriorityOption">
+          Low Priority
+        </option>
+        <option value="noPriority" class="badHabitPriorityOption">
+          No Priority
+        </option>
+      </select>
+      <button class="additionalInfo" id="badHabitPriorityAdditionalInfo">
+        ?
+      </button>
+      <label for="badHabitAdditionalInfo" id="badHabitAdditionalInfoLabel"
+        >Would you like to add any additional info about your habit?</label
+      >
+      <textarea id="badHabitAdditionalInfo" maxlength="500"></textarea>
+      <button type="submit" id="submitNewBadHabit">Submit</button>
+    </form>
