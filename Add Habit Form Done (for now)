@@ -1,0 +1,72 @@
+    <form method="get" id="goodHabitForm">
+      <h2>What is your habit?</h2>
+      <p>* indicates required field below</p>
+      <span class="required" aria-label="required">*</span>
+      <label id="categoryLabel" for="category">Category:</label>
+      <select id="categories">
+        <option value="select" class="categoryOption">Select</option>
+        <option value="fitness" class="categoryOption">Fitness</option>
+        <option value="mentalHealth" class="categoryOption">
+          Mental Health
+        </option>
+        <option value="reading" class="categoryOption">Reading</option>
+        <option value="" class="categoryOption">Nutrition</option>
+        <option value="hygeine" class="categoryOption">Hygeine</option>
+        <option value="goodSleep" class="categoryOption">Good Sleep</option>
+        <option value="finance" class="categoryOption">Finance</option>
+        <option value="creativity" class="categoryOption">Creativity</option>
+        <option value="financial" class="categoryOption">Financial</option>
+        <option value="environmental" class="categoryOption">
+          Environmental
+        </option>
+        <option value="productivity" class="categoryOption">
+          Productivity
+        </option>
+        <option value="social" class="categoryOption">Social</option>
+        <option value="learning" class="categoryOption">Learning</option>
+        <option value="other" class="categoryOption">Other</option>
+      </select>
+      <button type="button" class="additionalInfo" id="categoryInfo">?</button>
+
+      <span class="required" aria-label="required">*</span>
+      <label id="startingDateLabel" for="startingDate">Starting Date:</label>
+      <input id="startingDate" type="date" required />
+      <button id="dateInfo" type="button" class="additionalInfo">?</button>
+
+      <span class="required" aria-label="required">*</span>
+      <label id="frequencyLabel" for="frequency">Frequency:</label>
+      <select id="frequencyChoice" required>
+        <option value="select" class="frequency">Select</option>
+        <option value="daily" class="frequency">Daily</option>
+        <option value="weekly" class="frequency">Weekly</option>
+        <option value="twoWeeks" class="frequency">Every 2 Weeks</option>
+        <option value="threeWeeks" class="frequency">Every 3 Weeks</option>
+        <option value="onceaMonth" class="frequency">Once Every Month</option>
+        <option value="other" class="frequency">Other</option>
+      </select>
+      <button type="button" class="additionalInfo" id="frequencyInfo">?</button>
+      <span class="required" aria-label="required">*</span>
+      <label id="priorityLabel" for="priority">Priority Level:</label>
+      <select id="priority" required>
+        <option value="select" class="priorityOption">Select</option>
+        <option value="top" class="priorityOption">Top Priority</option>
+        <option value="high" class="priorityOption">High Priority</option>
+        <option value="standard" class="priorityOption">
+          Standard Priority
+        </option>
+        <option value="low" class="priorityOption">Low Priority</option>
+        <option value="no" class="priorityOption">No Priority</option>
+      </select>
+      <button class="additionalInfo" type="button" id="priorityInfo">?</button>
+      <input name="reminderBox" id="reminder" type="checkbox" />
+      <label name="reminderBox" id="reminderLabel" for="reminder"
+        >Would you like to be emailed reminders to keep track of this
+        habit?</label
+      >
+
+      <label for="descriptionForHabit" id="descriptionForHabitLabel"
+        >Feel free to describe your habit further:</label
+      >
+
+      <textarea id="descriptionForHabit" maxlength="500"></textarea>
+    </form>
