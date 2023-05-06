@@ -1,0 +1,83 @@
+ else if (setOption.value === "fitness") {
+        categoryChoice = "fitness";
+        console.log(categoryChoice);
+        const fitnessContainer = document.createElement(
+          this._goodHabitCategoryElements.containerElement
+        );
+        fitnessContainer.id =
+          this._goodHabitCategoryContainerIds.fitnessContainerId;
+        goodHabitForm.appendChild(fitnessContainer);
+        const fitnessLabel = document.createElement(
+          this._goodHabitCategoryElements.labelElement
+        );
+        fitnessLabel.classList.add(
+          this._goodHabitCategoryElementClasses.fitnessElementClass
+        );
+        fitnessLabel.id = this._goodHabitCategoryIds.fitnessLabelId;
+        fitnessLabel.textContent =
+          "I saw you chose fitness! What habit would you like to start tracking?";
+        fitnessContainer.appendChild(fitnessLabel);
+        console.log(fitnessContainer);
+
+        const fitnessSelect = document.createElement(
+          this._goodHabitCategoryElements.selectElement
+        );
+        fitnessSelect.classList.add(
+          this._goodHabitCategoryElementClasses.fitnessElementClass
+        );
+        fitnessSelect.id = this._goodHabitCategoryIds.fitnessSelectId;
+        fitnessContainer.appendChild(fitnessSelect);
+        const fitnessOptionOne = document.createElement(
+          this._goodHabitCategoryElements.optionElement
+        );
+        fitnessOptionOne.classList.add(
+          this._goodHabitCategoryElementClasses.fitnessOptionClass
+        );
+        fitnessOptionOne.id = this._goodHabitCategoryIds.fitnessOptionOneId;
+        fitnessOptionOne.value = this._goodHabitCategoryValues.selectValue;
+        fitnessOptionOne.textContent = "Select";
+        fitnessSelect.appendChild(fitnessOptionOne);
+        const fitnessOptionTwo = document.createElement(
+          this._goodHabitCategoryElements.optionElement
+        );
+        fitnessOptionTwo.classList.add(
+          this._goodHabitCategoryElementClasses.fitnessOptionClass
+        );
+        fitnessOptionTwo.id = this._goodHabitCategoryIds.fitnessOptionTwoId;
+        fitnessOptionTwo.value =
+          this._goodHabitCategoryValues.firstFitnessValue;
+        fitnessOptionTwo.textContent = "Running";
+        fitnessSelect.appendChild(fitnessOptionTwo);
+        const fitnessOptionThree = document.createElement(
+          this._goodHabitCategoryElements.optionElement
+        );
+        fitnessOptionThree.classList.add(
+          this._goodHabitCategoryElementClasses.fitnessOptionClass
+        );
+        fitnessOptionThree.id = this._goodHabitCategoryIds.fitnessOptionThreeId;
+        fitnessOptionThree.value =
+          this._goodHabitCategoryValues.secondFitnessValue;
+        fitnessOptionThree.textContent = "Weight Lifting";
+        fitnessSelect.appendChild(fitnessOptionThree);
+        const fitnessOptionFour = document.createElement(
+          this._goodHabitCategoryElements.optionElement
+        );
+        fitnessOptionFour.classList.add(
+          this._goodHabitCategoryElementClasses.fitnessOptionClass
+        );
+        fitnessOptionFour.id = this._goodHabitCategoryIds.fitnessOptionFourId;
+        fitnessOptionFour.value =
+          this._goodHabitCategoryValues.fourthFitnessValue;
+        fitnessOptionFour.textContent = "Biking";
+        fitnessSelect.appendChild(fitnessOptionFour);
+        const fitnessOptionFive = document.createElement(
+          this._goodHabitCategoryElements.optionElement
+        );
+        fitnessOptionFive.classList.add(
+          this._goodHabitCategoryElementClasses.fitnessOptionClass
+        );
+        fitnessOptionFive.id = this._goodHabitCategoryIds.fitnessOptionFiveId;
+        fitnessOptionFive.value =
+          this._goodHabitCategoryValues.fifthFitnessValue;
+        fitnessOptionFive.textContent = "Other";
+        fitnessSelect.appendChild(fitnessOptionFive);
