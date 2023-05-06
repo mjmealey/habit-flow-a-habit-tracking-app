@@ -1,0 +1,228 @@
+class goodHabitCategoryUserInput {
+  constructor() {
+    this._goodHabitForm = "";
+    this._goodHabitCategoriesList = "";
+    this._goodHabitStartingDate = "";
+    this._goodHabitFrequencyChoice = "";
+    this._goodHabitPriorityLevel = "";
+    this._goodHabitReminderBox = "";
+    this._goodHabitCategoryElements = {
+      containerElement: "div",
+      selectElement: "select",
+      optionElement: "option",
+      labelElement: "label",
+    };
+    this._goodHabitCategoryElementClasses = {
+      //mental health classes
+      mentalHealthElementClass: "mentalHealthElements",
+      mentalHealthOptionClass: "mentalHealthOptions",
+
+      //fitness classes
+      fitnessElementClass: "fitnesElements",
+      fitnessOptionClass: "fitnessOptions",
+    };
+    this._goodHabitCategoryContainerIds = {
+      mentalHealthContainerId: "mentalHealthContainer",
+      fitnessContainerId: "fitnessContainer",
+      readingContainerId: "readingContainer",
+      nutritionContainerId: "nutritionContainer",
+      hygeineContainerId: "hygeineContainer",
+      goodSleepContainerId: "goodSleepContainer",
+      financialContainerId: "financialContainer",
+      creativityContainerId: "creativityContainer",
+      environmentalContainerId: "environmentalContainer",
+      productivityContainerId: "productivityContainer",
+      socialContainerId: "socialContainer",
+      learningContainerId: "learningContainer",
+      otherContainerId: "otherContainer",
+    };
+
+    this._goodHabitCategoryIds = {
+      //mental health ids
+      mentalHealthLabelId: "mentalHealthLabel",
+      mentalHealthSelectId: "mentalHealthSelect",
+      mentalHealthOptionOneId: "mentalHealthOptionOne",
+      mentalHealthOptionTwoId: "mentalHealthOptionTwo",
+      mentalHealthOptionThreeId: "mentalHealthOptionThree",
+      mentalHealthOptionFourId: "mentalHealthOptionFour",
+      mentalHealthOptionFiveId: "mentalHealthOptionFive",
+      mentalHealthOptionSixId: "mentalHealthOptionSix",
+
+      //fitness ids
+      fitnessLabelId: "fitnessLabel",
+      fitnessSelectId: "fitnessSelect",
+      fitnessOptionOneId: "fitnessOptionOne",
+      fitnessOptionTwoId: "fitnessOptionTwo",
+      fitnessOptionThreeId: "fitnessOptionThree",
+      fitnessOptionFourId: "fitnessOptionFour",
+      fitnessOptionFiveId: "fitnessOptionFive",
+      fitnessOptionSixId: "fitnessOptionSix",
+    };
+  }
+
+  getGoodHabitForm() {
+    return this._goodHabitForm;
+  }
+
+  getGoodHabitCategoriesList() {
+    return this._goodHabitCategoriesList;
+  }
+
+  getGoodHabitStartingDate() {
+    return this._goodHabitStartingDate;
+  }
+
+  getGoodHabitFrequencyChoice() {
+    return this._goodHabitFrequencyChoice;
+  }
+
+  getGoodHabitPriorityLevel() {
+    return this._goodHabitPriorityLevel;
+  }
+
+  getGoodHabitReminderBox() {
+    return this._goodHabitReminderBox;
+  }
+
+  setGoodHabitCategoriesList(setOption) {
+    setOption.addEventListener("change", () => {
+      const mentalHealthCategoryContainer = document.getElementById(
+        this._goodHabitCategoryContainerIds.mentalHealthContainerId
+      );
+      const fitnessCategoryContainer = document.getElementById(
+        this._goodHabitCategoryContainerIds
+      );
+      if (setOption.value === "mentalHealth") {
+        categoryChoice = "mentalHealth";
+        console.log(categoryChoice);
+        const mentalHealthContainer = document.createElement("div");
+        mentalHealthContainer.id =
+          this._goodHabitCategoryContainerIds.mentalHealthContainerId;
+
+        const mentalHealthLabel = document.createElement(
+          this._goodHabitCategoryElements.labelElement
+        );
+        goodHabitForm.appendChild(mentalHealthContainer);
+        mentalHealthLabel.setAttribute("for", "mentalHealthSelect");
+        mentalHealthLabel.classList.add(
+          this._goodHabitCategoryElementClasses.mentalHealthElementClass
+        );
+        mentalHealthLabel.id = this._goodHabitCategoryIds.mentalHealthLabelId;
+        mentalHealthLabel.textContent =
+          "I saw you chose mental health! What habit would you like to start tracking?";
+        mentalHealthContainer.appendChild(mentalHealthLabel);
+        const mentalHealthSelect = document.createElement(
+          this._goodHabitCategoryElements.selectElement
+        );
+        mentalHealthSelect.id = this._goodHabitCategoryIds.mentalHealthSelectId;
+        mentalHealthSelect.classList.add(
+          this._goodHabitCategoryElementClasses.mentalHealthElementClass
+        );
+        mentalHealthSelect.name = "mentalHealthSelect";
+        mentalHealthContainer.appendChild(mentalHealthSelect);
+        const mentalHealthOptionOne = document.createElement(
+          this._goodHabitCategoryElements.optionElement
+        );
+        mentalHealthOptionOne.classList.add(
+          this._goodHabitCategoryElementClasses.mentalHealthOptionClass
+        );
+        mentalHealthOptionOne.id =
+          this._goodHabitCategoryIds.mentalHealthOptionOneId;
+        mentalHealthOptionOne.value = "select";
+        mentalHealthOptionOne.textContent = "Select";
+        mentalHealthSelect.appendChild(mentalHealthOptionOne);
+        console.log(mentalHealthOptionOne);
+        const mentalHealthOptionTwo = document.createElement(
+          this._goodHabitCategoryElements.optionElement
+        );
+        mentalHealthOptionTwo.classList.add(
+          this._goodHabitCategoryElementClasses.mentalHealthOptionClass
+        );
+        mentalHealthOptionTwo.id =
+          this._goodHabitCategoryIds.mentalHealthOptionTwoId;
+        mentalHealthOptionTwo.textContent = "Practicing Gratitude";
+        mentalHealthSelect.appendChild(mentalHealthOptionTwo);
+        const mentalHealthOptionThree = document.createElement(
+          this._goodHabitCategoryElements.optionElement
+        );
+        mentalHealthOptionThree.classList.add(
+          this._goodHabitCategoryElementClasses.mentalHealthOptionClass
+        );
+        mentalHealthOptionThree.id =
+          this._goodHabitCategoryIds.mentalHealthOptionThreeId;
+        mentalHealthOptionThree.textContent = "Journaling";
+        mentalHealthSelect.appendChild(mentalHealthOptionThree);
+        const mentalHealthOptionFour = document.createElement("option");
+        mentalHealthOptionFour.classList.add(
+          this._goodHabitCategoryElementClasses.mentalHealthOptionClass
+        );
+        mentalHealthOptionFour.id =
+          this._goodHabitCategoryIds.mentalHealthOptionFourId;
+        mentalHealthOptionFour.textContent = "Meditation";
+        mentalHealthSelect.appendChild(mentalHealthOptionFour);
+        const mentalHealthOptionFive = document.createElement("option");
+        mentalHealthOptionFive.classList.add(
+          this._goodHabitCategoryElementClasses.mentalHealthOptionClass
+        );
+        mentalHealthOptionFive.id =
+          this._goodHabitCategoryIds.mentalHealthOptionFiveId;
+        mentalHealthOptionFive.textContent = "Exercise";
+        mentalHealthSelect.appendChild(mentalHealthOptionFive);
+        const mentalHealthOptionSix = document.createElement("option");
+        mentalHealthOptionSix.classList.add("mentalHealthOptions");
+        mentalHealthOptionSix.id =
+          this._goodHabitCategoryIds.mentalHealthOptionSixId;
+        mentalHealthOptionSix.textContent = "Other";
+        mentalHealthSelect.appendChild(mentalHealthOptionSix);
+        console.log(mentalHealthContainer);
+      } else if (setOption.value === "fitness") {
+        categoryChoice = "fitness";
+        console.log(categoryChoice);
+        const fitnessContainer = document.createElement(
+          this._goodHabitCategoryElements.containerElement
+        );
+        fitnessContainer.id =
+          this._goodHabitCategoryContainerIds.fitnessContainerId;
+        goodHabitForm.appendChild(fitnessContainer);
+        const fitnessLabel = document.createElement(
+          this._goodHabitCategoryElements.labelElement
+        );
+        fitnessLabel.id = this._goodHabitCategoryIds.fitnessLabelId;
+        fitnessLabel.textContent =
+          "I saw you chose fitness! What habit would you like to start tracking?";
+        fitnessContainer.appendChild(fitnessLabel);
+        console.log(fitnessContainer);
+
+        const fitnessSelect = document.createElement(
+          this._goodHabitCategoryElements.selectElement
+        );
+        fitnessSelect.id = this._goodHabitCategoryIds.fitnessSelectId;
+      }
+
+      if (categoryChoice === "fitness") {
+        goodHabitForm.appendChild(fitnessContainer);
+        goodHabitForm.appendChild(mentalHealthContainer);
+        goodHabitForm.removeChild(mentalHealthContainer);
+      } else if (categoryChoice === "mentalHealth") {
+        goodHabitForm.appendChild(mentalHealthContainer);
+        goodHabitForm.appendChild(fitnessContainer);
+        goodHabitForm.removeChild(fitnessContainer);
+      }
+    });
+  }
+
+  setGoodHabitForm(formValidation) {
+    formValidation.addEventListener("submit", (e) => {
+      e.preventDefault();
+      goodHabitCategoriesList.checkValidity();
+    });
+  }
+}
+let categoryChoice = "";
+const goodForm = new goodHabitCategoryUserInput();
+const goodHabitForm = document.getElementById("goodHabitForm");
+const goodHabitCategoriesList = document.getElementById(
+  "goodHabitCategoriesList"
+);
+goodForm.setGoodHabitForm(goodHabitForm);
+goodForm.setGoodHabitCategoriesList(goodHabitCategoriesList);
