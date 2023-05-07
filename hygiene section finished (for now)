@@ -1,0 +1,78 @@
+else if (setOption.value === "hygiene") {
+        const hygieneContainer = document.createElement(
+          this._goodHabitCategoryElements.containerElement
+        );
+        hygieneContainer.id =
+          this._goodHabitCategoryContainerIds.hygieneContainerId;
+        goodHabitForm.appendChild(hygieneContainer);
+        const hygieneLabel = document.createElement(
+          this._goodHabitCategoryElements.labelElement
+        );
+        hygieneLabel.classList.add(
+          this._goodHabitCategoryElementClasses.hygieneElementClass
+        );
+        hygieneLabel.id = this._goodHabitCategoryIds.hygieneLabelId;
+        hygieneLabel.textContent =
+          "I saw you picked hygeine! Let's get more specific. What habit are you wanting to start?";
+        hygieneContainer.appendChild(hygieneLabel);
+        const hygieneSelect = document.createElement(
+          this._goodHabitCategoryElements.selectElement
+        );
+        hygieneSelect.classList.add(
+          this._goodHabitCategoryElementClasses.hygeineElementClass
+        );
+        hygieneSelect.id = this._goodHabitCategoryIds.hygieneSelectId;
+        hygieneContainer.appendChild(hygieneSelect);
+        const hygieneSelectOption = document.createElement(
+          this._goodHabitCategoryElements.optionElement
+        );
+        hygieneSelectOption.classList.add(
+          this._goodHabitCategoryElementClasses.hygeineOptionClass
+        );
+        hygieneSelectOption.id = this._goodHabitCategoryIds.hygieneSelectId;
+        hygieneSelectOption.value =
+          this._goodHabitCategoryValues.hygieneSelectValue;
+        hygieneSelectOption.textContent = "Select";
+        hygieneSelect.appendChild(hygieneSelectOption);
+        const hygieneOptionOne = document.createElement(
+          this._goodHabitCategoryElements.optionElement
+        );
+        hygieneOptionOne.classList.add(
+          this._goodHabitCategoryElementClasses.hygieneOptionClass
+        );
+        hygieneOptionOne.id = this._goodHabitCategoryIds.hygieneOptionOneId;
+        hygieneOptionOne.value =
+          this._goodHabitCategoryValues.firstHygieneValue;
+        hygieneOptionOne.textContent = "Brush Teeth Atleast Once A Day";
+        hygieneSelect.appendChild(hygieneOptionOne);
+        const hygieneOptionTwo = document.createElement(
+          this._goodHabitCategoryElements.optionElement
+        );
+        hygieneOptionTwo.classList.add(
+          this._goodHabitCategoryElementClasses.hygieneOptionClass
+        );
+        hygieneOptionTwo.id = this._goodHabitCategoryIds.hygieneOptionTwoId;
+        hygieneOptionTwo.value =
+          this._goodHabitCategoryValues.secondHygieneValue;
+        hygieneOptionTwo.textContent = "Shower Atleast Once a Day";
+        hygieneSelect.appendChild(hygieneOptionTwo);
+        const hygieneOptionThree = document.createElement(
+          this._goodHabitCategoryElements.optionElement
+        );
+        hygieneOptionThree.classList.add(this._goodHabitCategoryElementClasses.hygieneOptionClass)
+        hygieneOptionThree.id = this._goodHabitCategoryIds.hygieneOptionThreeId
+        hygieneOptionThree.value = this._goodHabitCategoryValues.thirdHygieneValue
+        hygieneOptionThree.textContent = "Put On Deodorant Everday"
+        hygieneSelect.appendChild(hygieneOptionThree)
+        const hygieneOptionFour = document.createElement(this._goodHabitCategoryElements.optionElement)
+        hygieneOptionFour.classList.add(this._goodHabitCategoryElementClasses.hygieneOptionClass)
+        hygieneOptionFour.id = this._goodHabitCategoryIds.hygieneOptionFourId
+        hygieneOptionFour.value = this._goodHabitCategoryValues.fourthHygieneValue
+        hygieneOptionFour.textContent = "Skincare Routine"
+        hygieneSelect.appendChild(hygieneOptionFour)
+        const hygieneOptionFive = document.createElement(this._goodHabitCategoryElements.optionElement)
+        hygieneOptionFive.classList.add(this._goodHabitCategoryElementClasses.hygieneOptionClass)
+        hygieneOptionFive.id = this._goodHabitCategoryIds.hygieneOptionFiveId
+        hygieneOptionFive.value = this._goodHabitCategoryValues.fifthHygieneValue
+        hygieneOptionFive.textContent = "Other"
+        hygieneSelect.appendChild(hygieneOptionFive)
