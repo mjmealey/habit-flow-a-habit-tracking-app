@@ -1,0 +1,62 @@
+ else if(setOption.value === "nutrition"){
+        const nutritionContainer = document.createElement(
+          this._goodHabitCategoryElements.containerElement
+        );
+        nutritionContainer.id =
+          this._goodHabitCategoryContainerIds.nutritionContainerId;
+        goodHabitForm.appendChild(nutritionContainer);
+        const nutritionLabel = document.createElement(
+          this._goodHabitCategoryElements.labelElement
+        );
+        nutritionLabel.classList.add(
+          this._goodHabitCategoryElementClasses.nutritionElementClass
+        );
+        nutritionLabel.id = this._goodHabitCategoryIds.nutritionLabelId;
+        nutritionLabel.textContent =
+          "I saw you chose nutrition! Let's get more specific! What nutritional habit would you like to track?";
+        nutritionContainer.appendChild(nutritionLabel);
+        const nutritionSelect = document.createElement(
+          this._goodHabitCategoryElements.selectElement
+        );
+        nutritionSelect.classList.add(
+          this._goodHabitCategoryElementClasses.nutritionElementClass
+        );
+        nutritionSelect.id = this._goodHabitCategoryIds.nutritionSelectId;
+        nutritionContainer.appendChild(nutritionSelect);
+        const nutritionSelectOption = document.createElement(this._goodHabitCategoryElements.optionElement)
+        nutritionSelectOption.classList.add =
+          this._goodHabitCategoryElementClasses.nutritionOptionClass
+        nutritionSelectOption.id = this._goodHabitCategoryIds.nutritionSelectOptionId;
+        nutritionSelectOption.value = this._goodHabitCategoryValues.nutritionSelectValue;
+        nutritionSelectOption.textContent = "Select"
+        nutritionSelect.appendChild(nutritionSelectOption)
+        const nutritionOptionTwo = document.createElement(this._goodHabitCategoryElements.optionElement)
+        nutritionOptionTwo.classList.add(this._goodHabitCategoryElementClasses.nutritionOptionClass)
+        nutritionOptionTwo.id = this._goodHabitCategoryIds.nutritionOptionOneId
+        nutritionOptionTwo.value = this._goodHabitCategoryValues.firstNutritionValue
+        nutritionOptionTwo.textContent = "One fruit a day"
+        nutritionSelect.appendChild(nutritionOptionTwo)
+        const nutritionOptionThree = document.createElement(this._goodHabitCategoryElements.optionElement)
+        nutritionOptionThree.classList.add(this._goodHabitCategoryElementClasses.nutritionOptionClass)
+        nutritionOptionThree.id = this._goodHabitCategoryIds.nutritionOptionTwoId
+        nutritionOptionThree.value = this._goodHabitCategoryValues.secondNutritionValue
+        nutritionOptionThree.textContent = "One Vegetable a Day"
+        nutritionSelect.appendChild(nutritionOptionThree)
+        const nutritionOptionFour = document.createElement(this._goodHabitCategoryElements.optionElement)
+        nutritionOptionFour.classList.add(this._goodHabitCategoryElementClasses.nutritionOptionClass)
+        nutritionOptionFour.id = this._goodHabitCategoryIds.nutritionOptionThreeId
+        nutritionOptionFour.value = this._goodHabitCategoryValues.thirdNutritionValue
+        nutritionOptionFour.textContent = "One fruit a week"
+        nutritionSelect.appendChild(nutritionOptionFour)
+        const nutritionOptionFive = document.createElement(this._goodHabitCategoryElements.optionElement)
+        nutritionOptionFive.classList.add(this._goodHabitCategoryElementClasses.nutritionOptionClass)
+        nutritionOptionFive.id = this._goodHabitCategoryIds.nutritionOptionFourId
+        nutritionOptionFive.value = this._goodHabitCategoryValues.nutritionOptionFour
+        nutritionOptionFive.textContent = "One vegetable a week"
+        nutritionSelect.appendChild(nutritionOptionFive)
+        const nutritionOptionSix = document.createElement(this._goodHabitCategoryElements.optionElement)
+        nutritionOptionSix.classList.add(this._goodHabitCategoryElementClasses.nutritionOptionClass)
+        nutritionOptionSix.id = this._goodHabitCategoryIds.nutritionOptionFiveId
+        nutritionOptionSix.value = this._goodHabitCategoryValues.fifthFitnessValue
+        nutritionOptionSix.textContent = "Other"
+        nutritionSelect.appendChild(nutritionOptionSix)
