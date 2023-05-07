@@ -1,0 +1,51 @@
+else if(setOption.value === "goodSleep"){
+        const goodSleepContainer = document.createElement(this._goodHabitCategoryElements.containerElement)
+        goodSleepContainer.id = this._goodHabitCategoryContainerIds.goodSleepContainerId
+        goodHabitForm.appendChild(goodSleepContainer)
+        const goodSleepLabel = document.createElement(this._goodHabitCategoryElements.labelElement)
+        goodSleepLabel.classList.add(this._goodHabitCategoryElementClasses.goodSleepElementClass)
+        goodSleepLabel.id = this._goodHabitCategoryIds.goodSleepLabelId
+        goodSleepLabel.textContent = "I saw you want to work towards getting good sleep! What habit would you like to work on?"
+        goodSleepContainer.appendChild(goodSleepLabel)
+        const goodSleepSelect = document.createElement(this._goodHabitCategoryElements.selectElement)
+        goodSleepSelect.id = this._goodHabitCategoryIds.goodSleepSelectId
+        goodSleepContainer.appendChild(goodSleepSelect)
+        const goodSleepSelectOption = document.createElement(this._goodHabitCategoryElements.optionElement)
+        goodSleepSelectOption.classList.add(this._goodHabitCategoryElementClasses.goodSleepOptionClass)
+        goodSleepSelectOption.id = this._goodHabitCategoryIds.goodSleepSelectOptionId
+        goodSleepSelectOption.value = this._goodHabitCategoryValues.goodSleepSelectValue
+        goodSleepSelectOption.textContent = "Select"
+        goodSleepSelect.appendChild(goodSleepSelectOption)
+        const goodSleepOptionOne = document.createElement(this._goodHabitCategoryElements.optionElement)
+        goodSleepOptionOne.classList.add(this._goodHabitCategoryElementClasses.goodSleepOptionClass)
+        goodSleepOptionOne.id = this._goodHabitCategoryIds.goodSleepOptionOne
+        goodSleepOptionOne.value = this._goodHabitCategoryValues.firstGoodSleepValue
+        goodSleepOptionOne.textContent = "Get 8 Hours of Sleep"
+        goodSleepSelect.appendChild(goodSleepOptionOne)
+        const goodSleepOptionTwo = document.createElement(this._goodHabitCategoryElementClasses.goodSleepOptionClass)
+        goodSleepOptionTwo.classList.add(this._goodHabitCategoryElementClasses.goodSleepOptionClass)
+        goodSleepOptionTwo.id = this._goodHabitCategoryIds.goodSleepOptionTwo
+        goodSleepOptionTwo.value = this._goodHabitCategoryValues.secondGoodSleepValue
+        goodSleepOptionTwo.textContent = "Not Going to Bed Too Late"
+        goodSleepSelect.appendChild(goodSleepOptionTwo)
+        const goodSleepOptionThree = document.createElement(this._goodHabitCategoryElements.optionElement)
+        goodSleepOptionThree.classList.add(this._goodHabitCategoryElementClasses.goodSleepOptionClass)
+        goodSleepOptionThree.id = this._goodHabitCategoryIds.goodSleepOptionThree
+        goodSleepOptionThree.value = this._goodHabitCategoryValues.goodSleepOptionThree
+        goodSleepOptionThree.textContent = "Turning Off All Blue Light Devices"
+        goodSleepSelect.appendChild(goodSleepOptionThree)
+        const goodSleepOptionFour = document.createElement(this._goodHabitCategoryElements.optionElement)
+        goodSleepOptionFour.classList.add(this._goodHabitCategoryElementClasses.goodSleepOptionClass)
+        goodSleepOptionFour.id = this._goodHabitCategoryIds.goodSleepOptionFour
+        goodSleepOptionFour.value = this._goodHabitCategoryValues.fourthGoodSleepValue
+        goodSleepOptionFour.textContent = "Doing Something Relaxing 30-60min Before Bed"
+        goodSleepSelect.appendChild(goodSleepOptionFour)
+        const goodSleepOptionFive = document.createElement(this._goodHabitCategoryElements.optionElement)
+        goodSleepOptionFive.classList.add(this._goodHabitCategoryElementClasses.goodSleepOptionClass)
+        goodSleepOptionFive.id = this._goodHabitCategoryIds.goodSleepOptionFive
+        goodSleepOptionFive.value = this._goodHabitCategoryValues.fifthGoodSleepValue
+        goodSleepOptionFive.textContent = "Other"
+        goodSleepSelect.appendChild(goodSleepOptionFive)
+        
+
+    }
