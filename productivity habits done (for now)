@@ -1,0 +1,90 @@
+else if (setOption === "productivity") {
+        categoryChoice = "productivity";
+        const productivityContainer = document.createElement(
+          this._goodHabitCategoryElements.containerElement
+        );
+        productivityContainer.classList.add(
+          this._goodHabitCategoryElementClasses.productivityElementClass
+        );
+        goodHabitForm.appendChild(productivityContainer);
+        const productivitySelect = document.createElement(
+          this._goodHabitCategoryElements.selectElement
+        );
+        productivitySelect.classList.add(
+          this._goodHabitCategoryElementClasses.productivityElementClass
+        );
+        productivitySelect.id = this._goodHabitCategoryIds.productivitySelectId;
+        productivityContainer.appendChild(productivitySelect);
+        const productivitySelectOption = document.createElement(
+          this._goodHabitCategoryElements.optionElement
+        );
+        productivitySelectOption.classList.add(
+          this._goodHabitCategoryElementClasses.productivityOptionClass
+        );
+        productivitySelectOption.id =
+          this._goodHabitCategoryIds.productivitySelectOptionId;
+        productivitySelectOption.value =
+          this._goodHabitCategoryValues.productivitySelectValue;
+        productivitySelectOption.textContent = "Select";
+        productivityContainer.appendChild(productivitySelectOption);
+        const productivityOptionOne = document.createElement(
+          this._goodHabitCategoryElements.optionElement
+        );
+        productivityOptionOne.classList.add(
+          this._goodHabitCategoryElementClasses
+        );
+        productivityOptionOne.id =
+          this._goodHabitCategoryIds.productivityOptionOne;
+        productivityOptionOne.value =
+          this._goodHabitCategoryValues.firstCreativityValue;
+        productivityOptionOne.textContent = "Avoid Procrastination";
+        productivityContainer.appendChild(productivityOptionOne);
+        const productivityOptionTwo = document.createElement(
+          this._goodHabitCategoryElements.optionElement
+        );
+        productivityOptionTwo.classList.add(
+          this._goodHabitCategoryElementClasses.productivityOptionClass
+        );
+        productivityOptionTwo.id =
+          this._goodHabitCategoryIds.productivityOptionTwo;
+        productivityOptionTwo.value =
+          this._goodHabitCategoryValues.secondProductivityValue;
+        productivityOptionTwo.textContent = "Consistency";
+        productivityContainer.appendChild(productivityOptionTwo);
+        const productivityOptionThree = document.createElement(
+          this._goodHabitCategoryElements.optionElement
+        );
+        productivityOptionThree.classList.add(
+          this._goodHabitCategoryElementClasses.productivityOptionClass
+        );
+        productivityOptionThree.id =
+          this._goodHabitCategoryIds.productivityOptionThree;
+        productivityOptionThree.value =
+          this._goodHabitCategoryValues.thirdProductivityValue;
+        productivityOptionThree.textContent = "Pomodoro Technique";
+        productivityContainer.appendChild(productivityOptionThree);
+        const productivityOptionFour = document.createElement(
+          this._goodHabitCategoryElements.optionElement
+        );
+        productivityOptionFour.classList.add(
+          this._goodHabitCategoryElementClasses.productivityOptionClass
+        );
+        productivityOptionFour.id =
+          this._goodHabitCategoryIds.productivityOptionFour;
+        productivityOptionFour.value =
+          this._goodHabitCategoryValues.fourthProductivityValue;
+        productivityOptionFour.textContent = "Being Organized";
+        productivityContainer.appendChild(productivityOptionFour);
+        const productivityOptionFive = document.createElement(
+          this._goodHabitCategoryElements.optionElement
+        );
+        productivityOptionFive.classList.add(
+          this._goodHabitCategoryElementClasses.productivityOptionClass
+        );
+        productivityOptionFive.id =
+          this._goodHabitCategoryIds.productivityOptionFive;
+        productivityOptionFive.value =
+          this._goodHabitCategoryValues.fifthProductivityValue;
+        productivityOptionFive.textContent = "Other";
+        productivityContainer.appendChild(productivityOptionFive);
+      }
