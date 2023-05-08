@@ -1,0 +1,87 @@
+ else if (setOption.value === "social") {
+        categoryChoice = "social";
+        const socialContainer = document.createElement(
+          this._goodHabitCategoryContainerIds.socialContainerId
+        );
+        socialContainer.id =
+          this._goodHabitCategoryContainerIds.socialContainerId;
+        goodHabitForm.appendChild(socialContainer);
+        const socialLabel = document.createElement(
+          this._goodHabitCategoryElements.labelElement
+        );
+        socialLabel.classList.add(
+          this._goodHabitCategoryElementClasses.socialElementClass
+        );
+        socialLabel.id = this._goodHabitCategoryIds.socialLabelId;
+        socialLabel.textContent =
+          "I saw you chose social! Let's get more specific! What habit would you like to start?";
+        socialContainer.appendChild(socialLabel);
+        const socialSelect = document.createElement(
+          this._goodHabitCategoryElements.selectElement
+        );
+        socialSelect.classList.add(
+          this._goodHabitCategoryElementClasses.socialElementClass
+        );
+        socialSelect.id = this._goodHabitCategoryIds.socialSelectId;
+        socialContainer.appendChild(socialSelect);
+        const socialSelectOption = document.createElement(
+          this._goodHabitCategoryElements.optionElement
+        );
+        socialSelectOption.classList.add(
+          this._goodHabitCategoryElementClasses.socialOptionClass
+        );
+        socialSelectOption.id = this._goodHabitCategoryIds.socialSelectOptionId;
+        socialSelectOption.value =
+          this._goodHabitCategoryValues.socialSelectValue;
+        socialSelectOption.textContent = "Select";
+        socialSelect.appendChild(socialSelectOption);
+        const socialOptionOne = document.createElement(
+          this._goodHabitCategoryElements.optionElement
+        );
+        socialOptionOne.classList.add(
+          this._goodHabitCategoryElementClasses.socialOptionClass
+        );
+        socialOptionOne.id = this._goodHabitCategoryIds.socialOptionOne;
+        socialOptionOne.value = this._goodHabitCategoryValues.firstSocialValue;
+        socialOptionOne.textContent = "Talking to Others";
+        socialSelect.appendChild(socialOptionOne);
+        const socialOptionTwo = document.createElement(
+          this._goodHabitCategoryElements
+        );
+        socialOptionTwo.id = this._goodHabitCategoryIds.socialOptionTwo;
+        socialOptionTwo.value = this._goodHabitCategoryValues.secondSocialValue;
+        socialOptionTwo.textContent = "Using Manners";
+        socialSelect.appendChild(socialOptionTwo);
+        const socialOptionThree = document.createElement(
+          this._goodHabitCategoryElements.optionElement
+        );
+        socialOptionThree.classList.add(
+          this._goodHabitCategoryElementClasses.socialOptionClass
+        );
+        socialOptionThree.id = this._goodHabitCategoryIds.socialOptionThree;
+        socialOptionThree.value =
+          this._goodHabitCategoryValues.socialOptionThree;
+        socialOptionThree.textContent = "Making Eye Contact";
+        socialSelect.appendChild(socialOptionThree);
+        const socialOptionFour = document.createElement(
+          this._goodHabitCategoryElements.optionElement
+        );
+        socialOptionFour.classList.add(
+          this._goodHabitCategoryElementClasses.creativityOptionClass
+        );
+        socialOptionFour.id = this._goodHabitCategoryIds.creativityOptionFour;
+        socialOptionFour.value =
+          this._goodHabitCategoryValues.fourthSocialValue;
+        socialOptionFour.textContent = "Ask Questions";
+        socialSelect.appendChild(socialOptionFour);
+        const socialOptionFive = document.createElement(
+          this._goodHabitCategoryElements.optionElement
+        );
+        socialOptionFive.classList.add(
+          this._goodHabitCategoryElementClasses.socialOptionClass
+        );
+        socialOptionFive.id = this._goodHabitCategoryIds.socialOptionFive;
+        socialOptionFive.value = this._goodHabitCategoryValues.fifthSocialValue;
+        socialOptionFive.textContent = "Other";
+        socialSelect.appendChild(socialOptionFive);
+      }
