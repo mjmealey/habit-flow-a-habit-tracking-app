@@ -1,0 +1,196 @@
+else if (setOption.value === "creativity") {
+        const creativityContainer = document.createElement(
+          this._goodHabitCategoryElements.containerElement
+        );
+        creativityContainer.id =
+          this._goodHabitCategoryContainerIds.creativityContainerId;
+        goodHabitForm.appendChild(creativityContainer);
+        const creativityLabel = document.createElement(
+          this._goodHabitCategoryElements.labelElement
+        );
+        creativityLabel.classList.add(
+          this._goodHabitCategoryElementClasses.creativityElementClass
+        );
+        creativityLabel.id = this._goodHabitCategoryIds.creativityLabelId;
+        creativityLabel.textContent =
+          "I saw you chose creativity! Let's get more specific! What habit would you like to track?";
+        creativityContainer.appendChild(creativityLabel);
+        const creativitySelect = document.createElement(
+          this._goodHabitCategoryElements.selectElement
+        );
+        creativitySelect.classList.add(
+          this._goodHabitCategoryElementClasses.creativityElementClass
+        );
+        creativitySelect.id = this._goodHabitCategoryIds.creativitySelectId;
+        creativityContainer.appendChild(creativitySelect);
+        const creativitySelectOption = document.createElement(
+          this._goodHabitCategoryElements.optionElement
+        );
+        creativitySelectOption.classList.add(
+          this._goodHabitCategoryElementClasses.creativityOptionClass
+        );
+        creativitySelectOption.id =
+          this._goodHabitCategoryIds.creativitySelectOptionId;
+        creativitySelectOption.value =
+          this._goodHabitCategoryValues.creativitySelectValue;
+        creativitySelectOption.textContent = "Select";
+        creativitySelect.appendChild(creativitySelectOption);
+        const creativityOptionOne = document.createElement(
+          this._goodHabitCategoryElements.optionElement
+        );
+        creativityOptionOne.classList.add(
+          this._goodHabitCategoryElementClasses.creativityOptionClass
+        );
+        creativityOptionOne.id = this._goodHabitCategoryIds.creativityOptionOne;
+        creativityOptionOne.value =
+          this._goodHabitCategoryValues.firstCreativityValue;
+        creativityOptionOne.textContent = "Create Any Type of Art Daily";
+        creativitySelect.appendChild(creativityOptionOne);
+        const creativityOptionTwo = document.createElement(
+          this._goodHabitCategoryElements.optionElement
+        );
+        creativityOptionTwo.classList.add(
+          this._goodHabitCategoryElementClasses.creativityOptionClass
+        );
+        creativityOptionTwo.id = this._goodHabitCategoryIds.creativityOptionTwo;
+        creativityOptionTwo.value =
+          this._goodHabitCategoryValues.secondCreativityValue;
+        creativityOptionTwo.textContent = "Create Any Type of Art Once a Week";
+        creativitySelect.appendChild(creativityOptionTwo);
+        const creativityOptionThree = document.createElement(
+          this._goodHabitCategoryElements.optionElement
+        );
+        creativityOptionThree.classList.add(
+          this._goodHabitCategoryElementClasses.creativityOptionClass
+        );
+        creativityOptionThree.id =
+          this._goodHabitCategoryIds.creativityOptionThree;
+        creativityOptionThree.value =
+          this._goodHabitCategoryValues.thirdCreativityValue;
+        creativityOptionThree.textContent = "Solve Problems";
+        creativitySelect.appendChild(creativityOptionThree);
+        const creativityOptionFour = document.createElement(
+          this._goodHabitCategoryElements.optionElement
+        );
+        creativityOptionFour.classList.add(
+          this._goodHabitCategoryElementClasses.creativityOptionClass
+        );
+        creativityOptionFour.id =
+          this._goodHabitCategoryIds.creativityOptionFour;
+        creativityOptionFour.value =
+          this._goodHabitCategoryValues.creativityOptionFour;
+        creativityOptionFour.textContent = "Practice your Skills";
+        creativitySelect.appendChild(creativityOptionFour);
+        const creativityOptionFive = document.createElement(
+          this._goodHabitCategoryElements.optionElement
+        );
+        creativityOptionFive.classList.add(
+          this._goodHabitCategoryElementClasses.creativityOptionClass
+        );
+        creativityOptionFive.id =
+          this._goodHabitCategoryIds.creativityOptionFive;
+        creativityOptionFive.value =
+          this._goodHabitCategoryValues.creativityOptionFive;
+        creativityOptionFive.textContent = "Other";
+        creativitySelect.appendChild(creativityOptionFive);
+      } else if (setOption.value === "environmental") {
+        const environmentalContainer = document.createElement(
+          this._goodHabitCategoryElements.containerElement
+        );
+        environmentalContainer.id =
+          this._goodHabitCategoryContainerIds.environmentalContainerId;
+        goodHabitForm.appendChild(environmentalContainer);
+        const environmentalLabel = document.createElement(
+          this._goodHabitCategoryElements.labelElement
+        );
+        environmentalLabel.classList.add(
+          this._goodHabitCategoryElementClasses.creativityElementClass
+        );
+        environmentalLabel.id = this._goodHabitCategoryIds.creativityLabelId;
+        environmentalLabel.textContent =
+          "You chose environmental! What habit would you like to choose in an effort to help the environment?";
+        environmentalContainer.appendChild(environmentalLabel);
+        const environmentalSelect = document.createElement(
+          this._goodHabitCategoryElements.selectElement
+        );
+        environmentalSelect.classList.add(
+          this._goodHabitCategoryElementClasses.environmentalElementClass
+        );
+        environmentalSelect.id =
+          this._goodHabitCategoryIds.environmentalSelectId;
+        environmentalContainer.appendChild(environmentalSelect);
+        const environmentalSelectOption = document.createElement(
+          this._goodHabitCategoryElements.optionElement
+        );
+        environmentalSelectOption.classList.add(
+          this._goodHabitCategoryElementClasses.environmentalOptionClass
+        );
+        environmentalSelectOption.id =
+          this._goodHabitCategoryIds.environmentalSelectOptionId;
+        environmentalSelectOption.value =
+          this._goodHabitCategoryValues.environmentalSelectValue;
+        environmentalSelectOption.textContent = "Select";
+        environmentalSelect.appendChild(environmentalSelectOption);
+        const environmentalOptionOne = document.createElement(
+          this._goodHabitCategoryElements.optionElement
+        );
+        environmentalOptionOne.classList.add(
+          this._goodHabitCategoryElementClasses.creativityOptionClass
+        );
+        environmentalOptionOne.id =
+          this._goodHabitCategoryIds.environmentalOptionOne;
+        environmentalOptionOne.value =
+          this._goodHabitCategoryElementClasses.firstEnvironmentalValue;
+        environmentalOptionOne.textContent = "Recycle Daily";
+        environmentalSelect.appendChild(environmentalOptionOne);
+        const environmentalOptionTwo = document.createElement(
+          this._goodHabitCategoryElements.optionElement
+        );
+        environmentalOptionTwo.classList.add(
+          this._goodHabitCategoryElementClasses.environmentalOptionClass
+        );
+        environmentalOptionTwo.id =
+          this._goodHabitCategoryIds.environmentalOptionTwo;
+        environmentalOptionTwo.value =
+          this._goodHabitCategoryValues.secondEnvironmentalValue;
+        environmentalOptionTwo.textContent = "Throw Away Litter";
+        environmentalSelect.appendChild(environmentalOptionTwo);
+        const environmentalOptionThree = document.createElement(
+          this._goodHabitCategoryElements.optionElement
+        );
+        environmentalOptionThree.classList.add(
+          this._goodHabitCategoryElementClasses.environmentalOptionClass
+        );
+        environmentalOptionThree.id =
+          this._goodHabitCategoryIds.environmentalOptionThree;
+        environmentalOptionThree.value =
+          this._goodHabitCategoryValues.thirdEnvironmentalValue;
+        environmentalOptionThree.textContent = "Walking instead of Driving";
+        environmentalSelect.appendChild(environmentalOptionThree);
+        const environmentalOptionFour = document.createElement(
+          this._goodHabitCategoryElements.optionElement
+        );
+        environmentalOptionFour.classList.add(
+          this._goodHabitCategoryElementClasses.environmentalOptionClass
+        );
+        environmentalOptionFour.id =
+          this._goodHabitCategoryIds.environmentalOptionFour;
+        environmentalOptionFour.value =
+          this._goodHabitCategoryValues.fourthEnvironmentalValue;
+        environmentalOptionFour.textContent = "Reduce Electricity Usage";
+        environmentalSelect.appendChild(environmentalOptionFour);
+        const environmentalOptionFive = document.createElement(
+          this._goodHabitCategoryElements.optionElement
+        );
+        environmentalOptionFive.classList.add(
+          this._goodHabitCategoryElementClasses.environmentalOptionClass
+        );
+        environmentalOptionFive.id =
+          this._goodHabitCategoryIds.environmentalOptionFive;
+        environmentalOptionFive.value =
+          this._goodHabitCategoryValues.fifthEnvironmentalValue;
+        environmentalOptionFive.textContent = "Other";
+        environmentalSelect.appendChild(environmentalOptionFive);
+      }
+    });
+  }
