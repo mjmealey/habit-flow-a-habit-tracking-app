@@ -1,0 +1,97 @@
+else if (setOption.value === "learning") {
+        categoryChoice = "learning";
+        const learningContainer = document.createElement(
+          this._goodHabitCategoryElements.containerElement
+        );
+        learningContainer.id =
+          this._goodHabitCategoryContainerIds.learningContainerId;
+        goodHabitForm.appendChild(learningContainer);
+        const learningLabel = document.createElement(
+          this._goodHabitCategoryElements.labelElement
+        );
+        learningLabel.classList.add(
+          this._goodHabitCategoryElementClasses.learningElementClass
+        );
+        learningLabel.id = this._goodHabitCategoryIds.learningLabelId;
+        learningLabel.textContent =
+          "I saw you chose learning! Let's get more specific! What habit would you like to start today?";
+        learningContainer.appendChild(learningLabel);
+        const learningSelect = document.createElement(
+          this._goodHabitCategoryElements.selectElement
+        );
+        learningSelect.classList.add(
+          this._goodHabitCategoryElementClasses.learningElementClass
+        );
+        learningSelect.id = this._goodHabitCategoryIds.learningSelectId;
+        learningContainer.appendChild(learningSelect);
+        const learningSelectOption = document.createElement(
+          this._goodHabitCategoryElements.optionElement
+        );
+        learningSelectOption.classList.add(
+          this._goodHabitCategoryElementClasses.learningOptionClass
+        );
+        learningSelectOption.id =
+          this._goodHabitCategoryIds.learningSelectOptionId;
+        learningSelectOption.value =
+          this._goodHabitCategoryValues.learningSelectValue;
+        learningSelectOption.textContent = "Select";
+        learningSelect.appendChild(learningSelectOption);
+        const learningOptionOne = document.createElement(
+          this._goodHabitCategoryElements.optionElement
+        );
+        learningOptionOne.classList.add(
+          this._goodHabitCategoryElementClasses.learningOptionClass
+        );
+        learningOptionOne.id = this._goodHabitCategoryIds.learningOptionOne;
+        learningOptionOne.value =
+          this._goodHabitCategoryValues.firstLearningValue;
+        learningOptionOne.textContent = "Note-taking";
+        learningSelect.appendChild(learningOptionOne);
+        const learningOptionTwo = document.createElement(
+          this._goodHabitCategoryElements.optionElement
+        );
+        learningOptionTwo.classList.add(
+          this._goodHabitCategoryElementClasses.learningOptionClass
+        );
+        learningOptionTwo.id = this._goodHabitCategoryIds.learningOptionTwo;
+        learningOptionTwo.value =
+          this._goodHabitCategoryValues.secondLearningValue;
+        learningOptionTwo.textContent =
+          "Watching Videos On What You Want To Learn";
+        learningSelect.appendChild(learningOptionTwo);
+        const learningOptionThree = document.createElement(
+          this._goodHabitCategoryElements.optionElement
+        );
+        learningOptionThree.classList.add(
+          this._goodHabitCategoryElementClasses.learningOptionClass
+        );
+        learningOptionThree.id = this._goodHabitCategoryIds.learningOptionThree;
+        learningOptionThree.value =
+          this._goodHabitCategoryIds.thirdLearningValue;
+        learningOptionThree.textContent =
+          "Practice What You Are Learning Daily";
+        learningSelect.appendChild(learningOptionThree);
+        const learningOptionFour = document.createElement(
+          this._goodHabitCategoryElements.optionElement
+        );
+        learningOptionFour.classList.add(
+          this._goodHabitCategoryElementClasses.learningOptionClass
+        );
+        learningOptionFour.id = this._goodHabitCategoryIds.learningOptionFour;
+        learningOptionFour.value =
+          this._goodHabitCategoryValues.fourthLearningValue;
+        learningOptionFour.textContent =
+          "Being Comfortable With Getting Assistance";
+        learningSelect.appendChild(learningOptionFour);
+        const learningOptionFive = document.createElement(
+          this._goodHabitCategoryElementClasses.learningOptionClass
+        );
+        learningOptionFive.classList.add(
+          this._goodHabitCategoryElementClasses.learningOptionClass
+        );
+        learningOptionFive.id = this._goodHabitCategoryIds.learningOptionFive;
+        learningOptionFive.value =
+          this._goodHabitCategoryValues.fifthLearningValue;
+        learningOptionFive.textContent = "Other";
+        learningSelect.appendChild(learningOptionFive);
+      }
