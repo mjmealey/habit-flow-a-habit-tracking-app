@@ -1,0 +1,63 @@
+else if (setOption.value === "finance") {
+        const financeContainer = document.createElement(
+          this._goodHabitCategoryElements.containerElement
+        );
+        financeContainer.id =
+          this._goodHabitCategoryContainerIds.financeContainerId;
+        goodHabitForm.appendChild(financeContainer);
+        const financeLabel = document.createElement(
+          this._goodHabitCategoryElements.labelElement
+        );
+        financeLabel.classList.add(
+          this._goodHabitCategoryElementClasses.financeElementClass
+        );
+        financeLabel.id = this._goodHabitCategoryIds.financeLabelId;
+        financeLabel.textContent =
+          "I saw you picked finances! What habit would you like to start tracking today?";
+        financeContainer.appendChild(financeLabel);
+        const financeSelect = document.createElement(
+          this._goodHabitCategoryElements.selectElement
+        );
+        financeSelect.classList.add(
+          this._goodHabitCategoryElementClasses.financeElementClass
+        );
+        financeSelect.id = this._goodHabitCategoryIds.financeSelectId
+        financeContainer.appendChild(financeSelect)
+        const financeSelectOption = document.createElement(this._goodHabitCategoryElements.optionElement)
+        financeSelectOption.classList.add(this._goodHabitCategoryElementClasses.goodSleepOptionClass)
+        financeSelectOption.id = this._goodHabitCategoryIds.financeSelectOptionId
+        financeSelectOption.value = this._goodHabitCategoryValues.financeSelectValue
+        financeSelectOption.textContent = "Select"
+        financeSelect.appendChild(financeSelectOption)
+        const financeOptionOne = document.createElement(this._goodHabitCategoryElements.optionElement)
+        financeOptionOne.classList.add(this._goodHabitCategoryElementClasses.financeOptionClass)
+        financeOptionOne.id = this._goodHabitCategoryIds.financeOptionOne
+        financeOptionOne.value = this._goodHabitCategoryValues.firstFinanceValue
+        financeOptionOne.textContent = "Pay Credit On Time"
+        financeSelect.appendChild(financeOptionOne)
+        const financeOptionTwo = document.createElement(this._goodHabitCategoryElements)
+        financeOptionTwo.classList.add(this._goodHabitCategoryElementClasses.financeOptionClass)
+        financeOptionTwo.id = this._goodHabitCategoryIds.financeOptionTwo
+        financeOptionTwo.value = this._goodHabitCategoryValues.secondFinanceValue
+        financeOptionTwo.textContent = "Budgeting"
+        financeSelect.appendChild(financeOptionTwo)
+        const financeOptionThree = document.createElement(this._goodHabitCategoryElements.optionElement)
+        financeOptionThree.classList.add(this._goodHabitCategoryElementClasses.financeOptionClass)
+        financeOptionThree.id = this._goodHabitCategoryIds.financeOptionThree
+        financeOptionThree.value = this._goodHabitCategoryValues.thirdFinanceValue
+        financeOptionThree.textContent = "Deposit a Set Percentage into Savings Every Paycheck"
+        financeSelect.appendChild(financeOptionThree)
+        const financeOptionFour = document.createElement(this._goodHabitCategoryElements.optionElement)
+        financeOptionFour.classList.add(this._goodHabitCategoryElementClasses.financeOptionClass)
+        financeOptionFour.id = this._goodHabitCategoryIds.financeOptionFour
+        financeOptionFour.value = this._goodHabitCategoryValues.fourthFinanceValue
+        financeOptionFour.textContent = "Regularly Check Subscription Bill Due Dates"
+        financeSelect.appendChild(financeOptionFour)
+        const financeOptionFive = document.createElement(this._goodHabitCategoryElements.optionElement)
+        financeOptionFive.classList.add(this._goodHabitCategoryElementClasses.financeOptionClass)
+        financeOptionFive.id = this._goodHabitCategoryIds.financeOptionFive
+        financeOptionFive.value = this._goodHabitCategoryValues.fifthFinanceValue
+        financeOptionFive.textContent = "Other"
+        financeSelect.appendChild(financeOptionFive)
+            
+      }
