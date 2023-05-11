@@ -1,0 +1,463 @@
+ const mentalHealthConditional =
+          document.getElementById("mentalHealthSelect");
+        console.log(mentalHealthConditional);
+        mentalHealthConditional.addEventListener("change", () => {
+          if (mentalHealthConditional.value === "practicingGratitude") {
+            const gratitudeContainer = document.createElement(
+              this._goodHabitCategoryElements.containerElement
+            );
+            gratitudeContainer.id =
+              this._goodHabitCategoryContainerIds.mentalHealthGratitudeFrequencyContainerId;
+            goodHabitForm.appendChild(gratitudeContainer);
+            const gratitudeLabel = document.createElement(
+              this._goodHabitCategoryElements.labelElement
+            );
+            gratitudeLabel.classList.add(
+              this._goodHabitCategoryElementClasses
+                .mentalHealthGratitudeElementClass
+            );
+            gratitudeLabel.id =
+              this._goodHabitCategoryIds.mentalHealthFrequencyLabelId;
+            gratitudeLabel.textContent =
+              "You chose gratitude as a habit! What is or what will be your frequency of practicing gratitude?";
+            gratitudeContainer.appendChild(gratitudeLabel);
+            const gratitudeSelect = document.createElement(
+              this._goodHabitCategoryElements.selectElement
+            );
+            gratitudeSelect.classList.add(
+              this._goodHabitCategoryElementClasses
+                .mentalHealthGratitudeElementClass
+            );
+            gratitudeSelect.id = this._goodHabitCategoryIds.gratitudeSelect;
+            gratitudeContainer.appendChild(gratitudeSelect);
+            const gratitudeSelectOption = document.createElement(
+              this._goodHabitCategoryElements.optionElement
+            );
+            gratitudeSelectOption.classList =
+              this._goodHabitCategoryElementClasses.mentalHealthGratitudeOptionClass;
+            gratitudeSelectOption.id =
+              this._goodHabitCategoryIds.mentalHealthFrequencySelectOptionId;
+            gratitudeSelectOption.value =
+              this._goodHabitCategoryValues.mentalHealthGratitudeFrequencySelectValue;
+            gratitudeSelectOption.textContent = "Select";
+            gratitudeSelect.appendChild(gratitudeSelectOption);
+            const gratitudeOptionOne = document.createElement(
+              this._goodHabitCategoryElements.optionElement
+            );
+            gratitudeOptionOne.classList.add(
+              this._goodHabitCategoryElementClasses
+                .mentalHealthGratitudeOptionClass
+            );
+            gratitudeOptionOne.id =
+              this._goodHabitCategoryIds.mentalHealthFrequencyOptionOneId;
+            gratitudeOptionOne.value =
+              this._goodHabitCategoryValues.firstMentalHealthGratitudeFrequencyValue;
+            gratitudeOptionOne.textContent = "Daily";
+            gratitudeSelect.appendChild(gratitudeOptionOne);
+            const gratitudeOptionTwo = document.createElement(
+              this._goodHabitCategoryElements.optionElement
+            );
+            gratitudeOptionTwo.classList.add(
+              this._goodHabitCategoryElementClasses
+                .mentalHealthGratitudeOptionClass
+            );
+            gratitudeOptionTwo.id =
+              this._goodHabitCategoryIds.mentalHealthFrequencyOptionTwoId;
+            gratitudeOptionTwo.value =
+              this._goodHabitCategoryValues.secondMentalHealthGratitudeFrequencyValue;
+            gratitudeOptionTwo.textContent = "Weekly";
+            gratitudeSelect.appendChild(gratitudeOptionTwo);
+            const gratitudeOptionThree = document.createElement(
+              this._goodHabitCategoryElements.optionElement
+            );
+            gratitudeOptionThree.classList.add(
+              this._goodHabitCategoryElementClasses
+                .mentalHealthGratitudeOptionClass
+            );
+            gratitudeOptionThree.id =
+              this._goodHabitCategoryIds.mentalHealthFrequencyOptionThreeId;
+            gratitudeOptionThree.value =
+              this._goodHabitCategoryIds.thirdMentalHealthGratitudeFrequencyValue;
+            gratitudeOptionThree.textContent = "Bi-Weekly";
+            gratitudeSelect.appendChild(gratitudeOptionThree);
+            const gratitudeOptionFour = document.createElement(
+              this._goodHabitCategoryElements.optionElement
+            );
+            gratitudeOptionFour.classList.add(
+              this._goodHabitCategoryElementClasses
+                .mentalHealthGratitudeOptionClass
+            );
+            gratitudeOptionFour.id =
+              this._goodHabitCategoryIds.gratitudeOptionFour;
+            gratitudeOptionFour.value =
+              this._goodHabitCategoryValues.fourthMentalHealthGratitudeFrequencyValue;
+            gratitudeOptionFour.textContent = "Monthly";
+            gratitudeSelect.appendChild(gratitudeOptionFour);
+            const gratitudeOptionFive = document.createElement(
+              this._goodHabitCategoryElements.optionElement
+            );
+            gratitudeOptionFive.classList.add(
+              this._goodHabitCategoryElementClasses
+                .mentalHealthGratitudeOptionClass
+            );
+            gratitudeOptionFive.id =
+              this._goodHabitCategoryIds.gratitudeOptionFive;
+            gratitudeOptionFive.value =
+              this._goodHabitCategoryValues.fifthMentalHealthGratitudeFrequencyValue;
+            gratitudeOptionFive.textContent = "Other";
+            gratitudeSelect.appendChild(gratitudeOptionFive);
+          } else if (mentalHealthConditional.value === "journaling") {
+            const journalingContainer = document.createElement(
+              this._goodHabitCategoryElements.containerElement
+            );
+            journalingContainer.id =
+              this._goodHabitCategoryContainerIds.mentalHealthGratitudeFrequencyContainerId;
+            goodHabitForm.appendChild(journalingContainer);
+            const journalingLabel = document.createElement(
+              this._goodHabitCategoryElements.labelElement
+            );
+            journalingLabel.classList.add(
+              this._goodHabitCategoryElementClasses
+                .mentalHealthJournalingElementClass
+            );
+            journalingLabel.id = this._goodHabitCategoryIds.journalingLabel;
+            journalingLabel.textContent =
+              "I see you picked journaling! What will be your frequency of journaling?";
+            journalingContainer.appendChild(journalingLabel);
+            const journalingSelect = document.createElement(
+              this._goodHabitCategoryElements.selectElement
+            );
+            journalingSelect.classList.add(
+              this._goodHabitCategoryElementClasses
+                .mentalHealthJournalingElementClass
+            );
+            journalingSelect.id =
+              this._goodHabitCategoryIds.mentalHealthFrequencySelectId;
+            journalingContainer.appendChild(journalingSelect);
+            const journalingSelectOption = document.createElement(
+              this._goodHabitCategoryElements.optionElement
+            );
+            journalingSelectOption.classList.add(
+              this._goodHabitCategoryElementClasses
+                .mentalHealthJournalingOptionClass
+            );
+            journalingSelectOption.id =
+              this._goodHabitCategoryIds.mentalHealthFrequencySelectOptionId;
+            journalingSelectOption.value =
+              this._goodHabitCategoryValues.mentalHealthJournalingFrequencySelectValue;
+            journalingSelectOption.textContent = "Select";
+            journalingSelect.appendChild(journalingSelectOption);
+            const journalingOptionOne = document.createElement(
+              this._goodHabitCategoryElements.optionElement
+            );
+            journalingOptionOne.classList.add(
+              this._goodHabitCategoryElementClasses
+                .mentalHealthJournalingElementClass
+            );
+            journalingOptionOne.id =
+              this._goodHabitCategoryIds.mentalHealthFrequencyOptionOneId;
+            journalingOptionOne.value =
+              this._goodHabitCategoryValues.firstMentalHealthJournalingFrequencyValue;
+            journalingOptionOne.textContent = "Write a Journal Daily";
+            journalingSelect.appendChild(journalingOptionOne);
+            const journalingOptionTwo = document.createElement(
+              this._goodHabitCategoryElements.optionElement
+            );
+            journalingOptionTwo.classList.add(
+              this._goodHabitCategoryElementClasses
+                .mentalHealthJournalingOptionClass
+            );
+            journalingOptionTwo.id =
+              this._goodHabitCategoryIds.mentalHealthFrequencyOptionTwoId;
+            journalingOptionTwo.value =
+              this._goodHabitCategoryIds.mentalHealthFrequencyOptionTwoId;
+            journalingOptionTwo.textContent = "Write a Journal Once a Week";
+            journalingSelect.appendChild(journalingOptionTwo);
+            const journalingOptionThree = document.createElement(
+              this._goodHabitCategoryElements.optionElement
+            );
+            journalingOptionThree.classList.add(
+              this._goodHabitCategoryElementClasses
+                .mentalHealthJournalingOptionClass
+            );
+            journalingOptionThree.id =
+              this._goodHabitCategoryIds.mentalHealthFrequencyOptionThreeId;
+            journalingOptionThree.value =
+              this._goodHabitCategoryValues.thirdMentalHealthJournalingFrequencyValue;
+            journalingOptionThree.textContent =
+              "Write a Journal Every Two Weeks";
+            journalingSelect.appendChild(journalingOptionThree);
+            const journalingOptionFour = document.createElement(
+              this._goodHabitCategoryElements.optionElement
+            );
+            journalingOptionFour.classList.add(
+              this._goodHabitCategoryElementClasses.creativityElementClass
+                .mentalHealthJournalingOptionClass
+            );
+            journalingOptionFour.id =
+              this._goodHabitCategoryIds.mentalHealthFrequencyOptionThreeId;
+            journalingOptionFour.value =
+              this._goodHabitCategoryValues.fourthMentalHealthJournalingFrequencyValue;
+            journalingOptionFour.textContent = "Write a Journal Monthly";
+            journalingSelect.appendChild(journalingOptionFour);
+            const journalingOptionFive = document.createElement(
+              this._goodHabitCategoryElements.optionElement
+            );
+            journalingOptionFive.classList.add(
+              this._goodHabitCategoryElementClasses
+                .mentalHealthJournalingOptionClass
+            );
+            journalingOptionFive.id =
+              this._goodHabitCategoryIds.mentalHealthFrequencyOptionFiveId;
+            journalingOptionFive.value =
+              this._goodHabitCategoryValues.fifthMentalHealthJournalingFrequencyValue;
+            journalingOptionFive.textContent = "Other";
+            journalingSelect.appendChild(journalingOptionFive);
+          } else if (mentalHealthConditional.value === "meditation") {
+            const meditationContainer = document.createElement(
+              this._goodHabitCategoryElements.containerElement
+            );
+            meditationContainer.id =
+              this._goodHabitCategoryContainerIds.meditationContainer;
+            goodHabitForm.appendChild(meditationContainer);
+            const meditationLabel = document.createElement(
+              this._goodHabitCategoryElements.labelElement
+            );
+            meditationLabel.classList.add(
+              this._goodHabitCategoryElementClasses
+                .mentalHealthMeditationElementClass
+            );
+            meditationLabel.id =
+              this._goodHabitCategoryIds.mentalHealthFrequencyLabelId;
+            meditationContainer.appendChild(meditationLabel);
+            const meditationSelect = document.createElement(
+              this._goodHabitCategoryElements.selectElement
+            );
+            meditationSelect.classList.add(
+              this._goodHabitCategoryElementClasses
+                .mentalHealthMeditationElementClass
+            );
+            meditationSelect.id =
+              this._goodHabitCategoryIds.mentalHealthFrequencySelectId;
+            meditationContainer.appendChild(meditationSelect);
+            const meditationSelectOption = document.createElement(
+              this._goodHabitCategoryElements.optionElement
+            );
+            meditationSelectOption.classList.add(
+              this._goodHabitCategoryElementClasses
+                .mentalHealthMeditationOptionClass
+            );
+            meditationSelectOption.id =
+              this._goodHabitCategoryIds.mentalHealthFrequencySelectOptionId;
+            meditationSelectOption.value =
+              this._goodHabitCategoryValues.mentalHealthMeditationFrequencySelectValue;
+            meditationSelectOption.textContent = "Select";
+            meditationSelect.appendChild(meditationSelectOption);
+            const meditationOptionOne = document.createElement(
+              this._goodHabitCategoryElements.selectElement
+            );
+            meditationOptionOne.classList.add(
+              this._goodHabitCategoryElementClasses.meditationOptionClass
+            );
+            meditationOptionOne.id =
+              this._goodHabitCategoryIds.mentalHealthFrequencyOptionOneId;
+            meditationOptionOne.value =
+              this._goodHabitCategoryValues.firstMentalHealthMeditationFrequencyValue;
+            meditationOptionOne.textContent = "Meditate Daily";
+            meditationSelect.appendChild(meditationOptionOne);
+            const meditationOptionTwo = document.createElement(
+              this._goodHabitCategoryElements.optionElement
+            );
+            meditationOptionTwo.classList.add(
+              this._goodHabitCategoryElementClasses
+                .mentalHealthMeditationElementClass
+            );
+            meditationOptionTwo.id =
+              this._goodHabitCategoryIds.mentalHealthFrequencyOptionTwoId;
+            meditationOptionTwo.value =
+              this._goodHabitCategoryValues.secondMentalHealthMeditationFrequencyValue;
+            meditationOptionTwo.textContent = "Meditate Weekly";
+            meditationSelect.appendChild(meditationOptionTwo);
+            const meditationOptionThree = document.createElement(
+              this._goodHabitCategoryElements.optionElement
+            );
+            meditationOptionThree.classList.add(
+              this._goodHabitCategoryElementClasses
+                .mentalHealthMeditationElementClass
+            );
+            meditationOptionThree.id =
+              this._goodHabitCategoryIds.mentalHealthFrequencyOptionThreeId;
+            meditationOptionThree.value =
+              this._goodHabitCategoryValues.thirdMentalHealthMeditationFrequencyValue;
+            meditationOptionThree.textContent = "Meditate Bi-Weekly";
+            meditationSelect.appendChild(meditationOptionThree);
+            const meditationOptionFour = document.createElement(
+              this._goodHabitCategoryElements.optionElement
+            );
+            meditationOptionFour.classList.add(
+              this._goodHabitCategoryElementClasses
+                .mentalHealthMeditationOptionClass
+            );
+            meditationOptionFour.id =
+              this._goodHabitCategoryIds.mentalHealthFrequencyOptionFourId;
+            meditationOptionFour.value =
+              this._goodHabitCategoryValues.fourthMentalHealthMeditationFrequencyValue;
+            meditationOptionFour.textContent = "Meditate Monthly";
+            meditationSelect.appendChild(meditationOptionFour);
+            const meditationOptionFive = document.createElement(
+              this._goodHabitCategoryElements.optionElement
+            );
+            meditationOptionFive.classList.add(
+              this._goodHabitCategoryElementClasses
+                .mentalHealthMeditationOptionClass
+            );
+            meditationOptionFive.id =
+              this._goodHabitCategoryIds.mentalHealthFrequencyOptionFiveId;
+            meditationOptionFive.value =
+              this._goodHabitCategoryValues.fifthMentalHealthMeditationFrequencyValue;
+            meditationOptionFive.textContent = "Other";
+            meditationSelect.appendChild(meditationOptionFive);
+          } else if (mentalHealthConditional.value === "exercise") {
+            const exerciseContainer = document.createElement(
+              this._goodHabitCategoryContainerIds
+                .mentalHealthExerciseFrequencyContainerId
+            );
+            goodHabitForm.appendChild(exerciseContainer);
+            const exerciseLabel = document.createElement(
+              this._goodHabitCategoryElements.labelElement
+            );
+            exerciseLabel.classList.add(
+              this._goodHabitCategoryElementClasses
+                .mentalHealthExerciseElementClass
+            );
+            exerciseLabel.id =
+              this._goodHabitCategoryIds.mentalHealthFrequencyLabelId;
+            exerciseLabel.textContent =
+              "You picked exercise as your habit for mental health! What is or what will be your frequency?";
+            exerciseContainer.appendChild(exerciseLabel);
+            const exerciseSelect = document.createElement(
+              this._goodHabitCategoryElements.selectElement
+            );
+            exerciseSelect.id =
+              this._goodHabitCategoryIds.mentalHealthFrequencySelectId;
+            exerciseSelect.classList.add(
+              this._goodHabitCategoryElementClasses
+                .mentalHealthExerciseElementClass
+            );
+            exerciseContainer.appendChild(exerciseSelect);
+            const exerciseSelectOption = document.createElement(
+              this._goodHabitCategoryElements.optionElement
+            );
+            exerciseSelectOption.classList.add(
+              this._goodHabitCategoryElementClasses
+                .mentalHealthExerciseOptionClass
+            );
+            exerciseSelectOption.id =
+              this._goodHabitCategoryIds.mentalHealthFrequencySelectOptionId;
+            exerciseSelectOption.value =
+              this._goodHabitCategoryValues.mentalHealthExerciseFrequencySelectValue;
+            exerciseSelectOption.textContent = "Select";
+            exerciseSelect.appendChild(exerciseSelectOption);
+            const exerciseOptionOne = document.createElement(
+              this._goodHabitCategoryElements.optionElement
+            );
+            exerciseOptionOne.classList.add(
+              this._goodHabitCategoryElementClasses
+                .mentalHealthExerciseOptionClass
+            );
+            exerciseOptionOne.id =
+              this._goodHabitCategoryIds.mentalHealthFrequencyOptionOneId;
+            exerciseOptionOne.value =
+              this._goodHabitCategoryIds.firstMentalHealthExerciseFrequencyValue;
+            exerciseOptionOne.textContent = "Exercise Daily";
+            exerciseSelect.appendChild(exerciseOptionOne);
+            const exerciseOptionTwo = document.createElement(
+              this._goodHabitCategoryElements.optionElement
+            );
+            exerciseOptionTwo.classList.add(
+              this._goodHabitCategoryElementClasses
+                .mentalHealthExerciseOptionClass
+            );
+            exerciseOptionTwo.id =
+              this._goodHabitCategoryIds.mentalHealthFrequencyOptionTwoId;
+            exerciseOptionTwo.value =
+              this._goodHabitCategoryValues.secondMentalHealthExerciseFrequencyValue;
+            exerciseOptionTwo.textContent = "Exercise Once a Week";
+            exerciseSelect.appendChild(exerciseOptionTwo);
+            const exerciseOptionThree = document.createElement(
+              this._goodHabitCategoryElements.optionElement
+            );
+            exerciseOptionThree.classList.add(
+              this._goodHabitCategoryElementClasses
+                .mentalHealthExerciseOptionClass
+            );
+            exerciseOptionThree.id =
+              this._goodHabitCategoryIds.mentalHealthFrequencyOptionThreeId;
+            exerciseOptionThree.value =
+              this._goodHabitCategoryValues.thirdMentalHealthExerciseFrequencyValue;
+            exerciseOptionThree.textContent = "Exercise Two Days a Week";
+            exerciseSelect.appendChild(exerciseOptionThree);
+            const exerciseOptionFour = document.createElement(
+              this._goodHabitCategoryElements.optionElement
+            );
+            exerciseOptionFour.classList.add(
+              this._goodHabitCategoryElementClasses
+                .mentalHealthExerciseOptionClass
+            );
+            exerciseOptionFour.id =
+              this._goodHabitCategoryIds.mentalHealthFrequencyOptionFourId;
+            exerciseOptionFour.value =
+              this._goodHabitCategoryValues.fourthMentalHealthExerciseFrequencyValue;
+            exerciseOptionFour.textContent = "Exercise Four Days a Week";
+            exerciseSelect.appendChild(exerciseOptionFour);
+            const exerciseOptionFive = document.createElement(
+              this._goodHabitCategoryElements.optionElement
+            );
+            exerciseOptionFive.classList.add(
+              this._goodHabitCategoryElementClasses
+                .mentalHealthExerciseOptionClass
+            );
+            exerciseOptionFive.id =
+              this._goodHabitCategoryIds.mentalHealthFrequencyOptionFiveId;
+            exerciseOptionFive.value =
+              this._goodHabitCategoryValues.fifthMentalHealthExerciseFrequencyValue;
+            exerciseOptionFive.textContent = "Other";
+            exerciseSelect.appendChild(exerciseOptionFive);
+          } else if (mentalHealthConditional.value === "other") {
+            const mentalHealthOtherContainer = document.createElement(
+              this._goodHabitCategoryElements.containerElement
+            );
+            mentalHealthOtherContainer.id =
+              this._goodHabitCategoryContainerIds.mentalHealthOtherFrequencyContainerId;
+            goodHabitForm.appendChild(mentalHealthOtherContainer);
+
+            const mentalHealthOtherLabel = document.createElement(
+              this._goodHabitCategoryElements.labelElement
+            );
+            mentalHealthOtherLabel.classList.add(
+              this._goodHabitCategoryElementClasses
+                .mentalHealthOtherElementClass
+            );
+            mentalHealthOtherLabel.id =
+              this._goodHabitCategoryIds.mentalHealthFrequencyLabelId;
+            mentalHealthOtherLabel.textContent =
+              "What is the name of your habit?";
+            mentalHealthOtherLabel.setAttribute(
+              "for",
+              this._goodHabitCategoryIds.mentalHealthOtherInputId
+            );
+            mentalHealthOtherContainer.appendChild(mentalHealthOtherLabel);
+            const mentalHealthOtherInput = document.createElement(
+              this._goodHabitCategoryElements.inputElement
+            );
+            mentalHealthOtherInput.classList.add(
+              this._goodHabitCategoryElementClasses
+                .mentalHealthOtherElementClass
+            );
+            mentalHealthOtherInput.id =
+              this._goodHabitCategoryIds.mentalHealthOtherInputId;
+            mentalHealthOtherInput.setAttribute("type", "text");
+            mentalHealthOtherContainer.appendChild(mentalHealthOtherInput);
+          }
+        });
+      }
