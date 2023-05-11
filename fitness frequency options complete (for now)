@@ -1,0 +1,459 @@
+        fitnessSelect.addEventListener("change", () => {
+          if (fitnessSelect.value === "running") {
+            const runningFrequencyContainer = document.createElement(
+              this._goodHabitCategoryElements.containerElement
+            );
+            runningFrequencyContainer.id =
+              this._goodHabitCategoryContainerIds.fitnessRunningFrequencyContainerId;
+            goodHabitForm.appendChild(runningFrequencyContainer);
+            const runningFrequencyLabel = document.createElement(
+              this._goodHabitCategoryElements.labelElement
+            );
+            runningFrequencyLabel.classList.add(
+              this._goodHabitCategoryElementClasses.fitnessRunningElementClass
+            );
+            runningFrequencyLabel.id =
+              this._goodHabitCategoryIds.fitnessFrequencyLabelId;
+            runningFrequencyLabel.textContent =
+              "You picked running! What will your frequency level be?";
+            runningFrequencyContainer.appendChild(runningFrequencyLabel);
+            const runningFrequencySelect = document.createElement(
+              this._goodHabitCategoryElements.selectElement
+            );
+            runningFrequencySelect.classList.add(
+              this._goodHabitCategoryElementClasses.fitnessRunningElementClass
+            );
+            runningFrequencySelect.id =
+              this._goodHabitCategoryIds.fitnessFrequencySelect;
+            runningFrequencyContainer.appendChild(runningFrequencySelect);
+            const runningFrequencySelectOption = document.createElement(
+              this._goodHabitCategoryElements.optionElement
+            );
+            runningFrequencySelectOption.classList.add(
+              this._goodHabitCategoryElementClasses.fitnessRunningOptionClass
+            );
+            runningFrequencySelectOption.id =
+              this._goodHabitCategoryIds.fitnessFrequencySelectOptionId;
+            runningFrequencySelectOption.value =
+              this._goodHabitCategoryValues.fitnessRunningFrequencySelectValue;
+            runningFrequencySelectOption.textContent = "Select";
+            runningFrequencySelect.appendChild(runningFrequencySelectOption);
+            const runningFrequencyOptionOne = document.createElement(
+              this._goodHabitCategoryElements.optionElement
+            );
+            runningFrequencyOptionOne.classList.add(
+              this._goodHabitCategoryElementClasses.fitnessRunningOptionClass
+            );
+            runningFrequencyOptionOne.id =
+              this._goodHabitCategoryIds.fitnessFrequencyOptionOneId;
+            runningFrequencyOptionOne.value =
+              this._goodHabitCategoryValues.firstFitnessRunningFrequencyValue;
+            runningFrequencyOptionOne.textContent = "Run Daily";
+            runningFrequencySelect.appendChild(runningFrequencyOptionOne);
+            const runningFrequencyOptionTwo = document.createElement(
+              this._goodHabitCategoryElements.optionElement
+            );
+            runningFrequencyOptionTwo.classList.add(
+              this._goodHabitCategoryElementClasses.fitnessRunningOptionClass
+            );
+            runningFrequencyOptionTwo.id =
+              this._goodHabitCategoryIds.runningFrequencyOptionTwoId;
+            runningFrequencyOptionTwo.value =
+              this._goodHabitCategoryValues.secondFitnessRunningFrequencyValue;
+            runningFrequencyOptionTwo.textContent = "Run 2 Days a Week";
+            runningFrequencySelect.appendChild(runningFrequencyOptionTwo);
+            const runningFrequencyOptionThree = document.createElement(
+              this._goodHabitCategoryElements.optionElement
+            );
+            runningFrequencyOptionThree.classList.add(
+              this._goodHabitCategoryElementClasses.fitnessRunningOptionClass
+            );
+            runningFrequencyOptionThree.id =
+              this._goodHabitCategoryIds.fitnessFrequencyOptionThreeId;
+            runningFrequencyOptionThree.value =
+              this._goodHabitCategoryValues.thirdFitnessRunningFrequencyValue;
+            runningFrequencyOptionThree.textContent = "Run 3 Days a Week";
+            runningFrequencySelect.appendChild(runningFrequencyOptionThree);
+            const runningFrequencyOptionFour = document.createElement(
+              this._goodHabitCategoryElements.optionElement
+            );
+            runningFrequencyOptionFour.classList.add(
+              this._goodHabitCategoryElementClasses.fitnessRunningOptionClass
+            );
+            runningFrequencyOptionFour.id =
+              this._goodHabitCategoryIds.fitnessFrequencyOptionFourId;
+            runningFrequencyOptionFour.value =
+              this._goodHabitCategoryValues.fourthFitnessRunningFrequencyValue;
+            runningFrequencyOptionFour.textContent = "Run 4 Days a Week";
+            runningFrequencySelect.appendChild(runningFrequencyOptionFour);
+            const runningFrequencyOptionFive = document.createElement(
+              this._goodHabitCategoryElements.optionElement
+            );
+            runningFrequencyOptionFive.classList.add(
+              this._goodHabitCategoryElementClasses.fitnessRunningOptionClass
+            );
+            runningFrequencyOptionFive.id =
+              this._goodHabitCategoryIds.fitnessFrequencyOptionFiveId;
+            runningFrequencyOptionFive.value =
+              this._goodHabitCategoryValues.fifthFitnessRunningFrequencyValue;
+            runningFrequencyOptionFive.textContent = "Other";
+            runningFrequencySelect.appendChild(runningFrequencyOptionFive);
+          } else if (fitnessSelect.value === "weightLifting") {
+            const weightLiftingFrequencyContainer = document.createElement(
+              this._goodHabitCategoryElements.containerElement
+            );
+            weightLiftingFrequencyContainer.id =
+              this._goodHabitCategoryContainerIds.fitnessWeightLiftingFrequencyContainerId;
+            goodHabitForm.appendChild(weightLiftingFrequencyContainer);
+            const weightLiftingFrequencyLabel = document.createElement(
+              this._goodHabitCategoryElements.labelElement
+            );
+            weightLiftingFrequencyLabel.classList.add(
+              this._goodHabitCategoryElementClasses
+                .fitnessWeightLiftingElementClass
+            );
+            weightLiftingFrequencyLabel.id =
+              this._goodHabitCategoryIds.fitnessFrequencyLabelId;
+            weightLiftingFrequencyLabel.textContent =
+              "You chose weightlifting! What is/will be your frequency of weight lifting?";
+            weightLiftingFrequencyContainer.appendChild(
+              weightLiftingFrequencyLabel
+            );
+            const weightLiftingFrequencySelect = document.createElement(
+              this._goodHabitCategoryElements.selectElement
+            );
+            weightLiftingFrequencySelect.classList.add(
+              this._goodHabitCategoryElementClasses
+                .fitnessWeightLiftingElementClass
+            );
+            weightLiftingFrequencyContainer.appendChild(
+              weightLiftingFrequencySelect
+            );
+            const weightLiftingFrequencySelectOption = document.createElement(
+              this._goodHabitCategoryElements.optionElement
+            );
+            weightLiftingFrequencySelectOption.classList.add(
+              this._goodHabitCategoryElementClasses
+                .fitnessWeightLiftingOptionClass
+            );
+            weightLiftingFrequencySelectOption.id =
+              this._goodHabitCategoryIds.fitnessFrequencySelectOptionId;
+            weightLiftingFrequencySelectOption.value =
+              this._goodHabitCategoryValues.fitnessWeightLiftingFrequencySelectValue;
+            weightLiftingFrequencySelectOption.textContent = "Select";
+            weightLiftingFrequencySelect.appendChild(
+              weightLiftingFrequencySelectOption
+            );
+            const weightLiftingFrequencyOptionOne = document.createElement(
+              this._goodHabitCategoryElements.optionElement
+            );
+            weightLiftingFrequencyOptionOne.classList.add(
+              this._goodHabitCategoryElements.optionElement
+            );
+            weightLiftingFrequencyOptionOne.id =
+              this._goodHabitCategoryIds.fitnessFrequencyOptionOneId;
+            weightLiftingFrequencyOptionOne.value =
+              this._goodHabitCategoryValues.firstFitnessWeightLiftingFrequencyValue;
+            weightLiftingFrequencyOptionOne.textContent = "Weightlift Daily";
+            weightLiftingFrequencySelect.appendChild(
+              weightLiftingFrequencyOptionOne
+            );
+            const weightLiftingFrequencyOptionTwo = document.createElement(
+              this._goodHabitCategoryElements.optionElement
+            );
+            weightLiftingFrequencyOptionTwo.classList.add(
+              this._goodHabitCategoryElementClasses
+                .fitnessWeightLiftingOptionClass
+            );
+            weightLiftingFrequencyOptionTwo.id =
+              this._goodHabitCategoryIds.fitnessFrequencyOptionTwoId;
+            weightLiftingFrequencyOptionTwo.value =
+              this._goodHabitCategoryValues.secondFitnessWeightLiftingFrequencyValue;
+            weightLiftingFrequencyOptionTwo.textContent =
+              "Weightlift 2 Days a Week";
+            weightLiftingFrequencySelect.appendChild(
+              weightLiftingFrequencyOptionTwo
+            );
+            const weightLiftingFrequencyOptionThree = document.createElement(
+              this._goodHabitCategoryElements.optionElement
+            );
+            weightLiftingFrequencyOptionThree.classList.add(
+              this._goodHabitCategoryElementClasses
+                .fitnessWeightLiftingOptionClass
+            );
+            weightLiftingFrequencyOptionThree.id =
+              this._goodHabitCategoryIds.fitnessFrequencyOptionThreeId;
+            weightLiftingFrequencyOptionThree.value =
+              this._goodHabitCategoryValues.thirdFitnessWeightLiftingFrequencyValue;
+            weightLiftingFrequencyOptionThree.textContent =
+              "Weightlift 3 Days a Week";
+            weightLiftingFrequencySelect.appendChild(
+              weightLiftingFrequencyOptionThree
+            );
+            const weightLiftingFrequencyOptionFour = document.createElement(
+              this._goodHabitCategoryElements.optionElement
+            );
+            weightLiftingFrequencyOptionFour.classList.add(
+              this._goodHabitCategoryElementClasses
+                .fitnessWeightLiftingOptionClass
+            );
+            weightLiftingFrequencyOptionFour.id =
+              this._goodHabitCategoryIds.fitnessFrequencyOptionFourId;
+            weightLiftingFrequencyOptionFour.value =
+              this._goodHabitCategoryValues.fourthFitnessWeightLiftingFrequencyValue;
+            weightLiftingFrequencyOptionFour.textContent =
+              "Weightlift 4 days a Week";
+            weightLiftingFrequencySelect.appendChild(
+              weightLiftingFrequencyOptionFour
+            );
+            const weightLiftingOptionFive = document.createElement(
+              this._goodHabitCategoryElements.optionElement
+            );
+            weightLiftingOptionFive.classList.add(
+              this._goodHabitCategoryElementClasses
+                .fitnessWeightLiftingOptionClass
+            );
+            weightLiftingOptionFive.id =
+              this._goodHabitCategoryIds.fitnessFrequencyOptionFiveId;
+            weightLiftingOptionFive.value =
+              this._goodHabitCategoryValues.fifthFitnessWeightLiftingFrequencyValue;
+            weightLiftingOptionFive.textContent = "Other";
+            weightLiftingFrequencySelect.appendChild(weightLiftingOptionFive);
+          } else if (fitnessSelect.value === "biking") {
+            const bikingFrequencyContainer = document.createElement(
+              this._goodHabitCategoryElements.containerElement
+            );
+            bikingFrequencyContainer.id =
+              this._goodHabitCategoryContainerIds.fitnessBikingFrequencyContainerId;
+            goodHabitForm.appendChild(bikingFrequencyContainer);
+            const bikingFrequencyLabel = document.createElement(
+              this._goodHabitCategoryElements.labelElement
+            );
+            bikingFrequencyLabel.id =
+              this._goodHabitCategoryIds.fitnessFrequencyLabelId;
+            bikingFrequencyLabel.textContent =
+              "You picked biking for your habit! What is or what will be the frequency of your biking?";
+            bikingFrequencyContainer.appendChild(bikingFrequencyLabel);
+            const bikingFrequencySelect = document.createElement(
+              this._goodHabitCategoryElements.selectElement
+            );
+            bikingFrequencySelect.classList.add(
+              this._goodHabitCategoryElementClasses.fitnessBikingOptionClass
+            );
+            bikingFrequencySelect.id =
+              this._goodHabitCategoryIds.fitnessFrequencySelectId;
+            bikingFrequencyContainer.appendChild(bikingFrequencySelect);
+            const bikingFrequencySelectOption = document.createElement(
+              this._goodHabitCategoryElements.optionElement
+            );
+            bikingFrequencySelectOption.classList.add(
+              this._goodHabitCategoryElementClasses.fitnessBikingOptionClass
+            );
+            bikingFrequencySelectOption.id =
+              this._goodHabitCategoryIds.fitnessFrequencySelectOptionId;
+            bikingFrequencySelectOption.value =
+              this._goodHabitCategoryValues.fitnessBikingFrequencySelectValue;
+            bikingFrequencySelectOption.textContent = "Select";
+            bikingFrequencySelect.appendChild(bikingFrequencySelectOption);
+            const bikingFrequencyOptionOne = document.createElement(
+              this._goodHabitCategoryElements.optionElement
+            );
+            bikingFrequencyOptionOne.classList.add(
+              this._goodHabitCategoryElementClasses.fitnessBikingOptionClass
+            );
+            bikingFrequencyOptionOne.id =
+              this._goodHabitCategoryIds.fitnessFrequencyOptionOneId;
+            bikingFrequencyOptionOne.value =
+              this._goodHabitCategoryValues.firstFitnessBikingFrequencyValue;
+            bikingFrequencyOptionOne.textContent = "Bike Daily";
+            bikingFrequencySelect.appendChild(bikingFrequencyOptionOne);
+            const bikingFrequencyOptionTwo = document.createElement(
+              this._goodHabitCategoryElements.optionElement
+            );
+            bikingFrequencyOptionTwo.classList.add(
+              this._goodHabitCategoryElementClasses.fitnessBikingOptionClass
+            );
+            bikingFrequencyOptionTwo.id =
+              this._goodHabitCategoryIds.fitnessFrequencyOptionTwoId;
+            bikingFrequencyOptionTwo.value =
+              this._goodHabitCategoryValues.secondFitnessBikingFrequencyValue;
+            bikingFrequencyOptionTwo.textContent = "Bike 2 Days a Week";
+            bikingFrequencySelect.appendChild(bikingFrequencyOptionTwo);
+            const bikingFrequencyOptionThree = document.createElement(
+              this._goodHabitCategoryElements.optionElement
+            );
+            bikingFrequencyOptionThree.classList.add(
+              this._goodHabitCategoryElementClasses.fitnessBikingOptionClass
+            );
+            bikingFrequencyOptionThree.id =
+              this._goodHabitCategoryIds.fitnessFrequencyOptionThreeId;
+            bikingFrequencyOptionThree.value =
+              this._goodHabitCategoryValues.thirdFitnessBikingFrequencyValue;
+            bikingFrequencyOptionThree.textContent = "Bike 3 Days a Week";
+            bikingFrequencySelect.appendChild(bikingFrequencyOptionThree);
+            const bikingFrequencyOptionFour = document.createElement(
+              this._goodHabitCategoryElements.containerElement
+            );
+            bikingFrequencyOptionFour.classList.add(
+              this._goodHabitCategoryElementClasses.fitnessBikingOptionClass
+            );
+            bikingFrequencyOptionFour.id =
+              this._goodHabitCategoryIds.fitnessFrequencyOptionFourId;
+            bikingFrequencyOptionFour.value =
+              this._goodHabitCategoryValues.fourthFitnessBikingFrequencyValue;
+            bikingFrequencyOptionFour.textContent = "Bike 4 Days a Week";
+            bikingFrequencySelect.appendChild(bikingFrequencyOptionFour);
+            const bikingFrequencyOptionFive = document.createElement(
+              this._goodHabitCategoryElements.optionElement
+            );
+            bikingFrequencyOptionFive.classList.add(
+              this._goodHabitCategoryElementClasses.fitnessBikingOptionClass
+            );
+            bikingFrequencyOptionFive.id =
+              this._goodHabitCategoryIds.fitnessFrequencyOptionFiveId;
+            bikingFrequencyOptionFive.value =
+              this._goodHabitCategoryValues.fifthFitnessBikingFrequencyValue;
+            bikingFrequencyOptionFive.textContent = "Other";
+            bikingFrequencySelect.appendChild(bikingFrequencyOptionFive);
+          } else if (fitnessSelect.value === "calisthenics") {
+            const calisthenicsContainer = document.createElement(
+              this._goodHabitCategoryElements.containerElement
+            );
+            calisthenicsContainer.id = this._goodHabitCategoryIds;
+            goodHabitForm.appendChild(calisthenicsContainer);
+            const calisthenicsLabel = document.createElement(
+              this._goodHabitCategoryElements.labelElement
+            );
+            calisthenicsLabel.classList.add(
+              this._goodHabitCategoryElementClasses
+                .fitnessCalisthenicsElementClass
+            );
+            calisthenicsLabel.id =
+              this._goodHabitCategoryIds.fitnessFrequencyLabelId;
+            calisthenicsLabel.textContent =
+              "You chose Calisthenics! What is or what will be your frequency for calisthenics?";
+            calisthenicsContainer.appendChild(calisthenicsLabel);
+            const calisthenicsSelect = document.createElement(
+              this._goodHabitCategoryElements.selectElement
+            );
+            calisthenicsSelect.classList.add(
+              this._goodHabitCategoryElementClasses
+                .fitnessCalisthenicsElementClass
+            );
+            calisthenicsSelect.id =
+              this._goodHabitCategoryIds.fitnessFrequencySelectId;
+            calisthenicsContainer.appendChild(calisthenicsSelect);
+            const calisthenicsSelectOption = document.createElement(
+              this._goodHabitCategoryElements.optionElement
+            );
+            calisthenicsSelectOption.classList.add(
+              this._goodHabitCategoryElementClasses
+                .fitnessCalisthenicsOptionClass
+            );
+            calisthenicsSelectOption.id =
+              this._goodHabitCategoryIds.bikingFrequencySelectOption;
+            calisthenicsSelectOption.value =
+              this._goodHabitCategoryValues.fitnessCalisthenicsFrequencySelectValue;
+            calisthenicsSelectOption.textContent = "Select";
+            calisthenicsSelect.appendChild(calisthenicsSelectOption);
+            const calisthenicsOptionOne = document.createElement(
+              this._goodHabitCategoryElements.optionElement
+            );
+            calisthenicsOptionOne.classList.add(
+              this._goodHabitCategoryElementClasses
+                .fitnessCalisthenicsOptionClass
+            );
+            calisthenicsOptionOne.id =
+              this._goodHabitCategoryIds.fitnessFrequencyOptionOneId;
+            calisthenicsOptionOne.value =
+              this._goodHabitCategoryValues.firstFitnessCalisthenicsFrequencyValue;
+            calisthenicsOptionOne.textContent = "Do Calisthenics Daily";
+            calisthenicsSelect.appendChild(calisthenicsOptionOne);
+            const calisthenicsOptionTwo = document.createElement(
+              this._goodHabitCategoryElements.optionElement
+            );
+            calisthenicsOptionTwo.classList.add(
+              this._goodHabitCategoryElementClasses
+                .fitnessCalisthenicsOptionClass
+            );
+            calisthenicsOptionTwo.id =
+              this._goodHabitCategoryIds.fitnessFrequencyOptionTwoId;
+            calisthenicsOptionTwo.value =
+              this._goodHabitCategoryValues.secondFitnessCalisthenicsFrequencyValue;
+            calisthenicsOptionTwo.textContent = "Do Calisthenics 2 Days a Week";
+            calisthenicsSelect.appendChild(calisthenicsOptionTwo);
+            const calisthenicsOptionThree = document.createElement(
+              this._goodHabitCategoryElements.optionElement
+            );
+            calisthenicsOptionThree.classList.add(
+              this._goodHabitCategoryElementClasses
+                .fitnessCalisthenicsOptionClass
+            );
+            calisthenicsOptionThree.id =
+              this._goodHabitCategoryIds.fitnessFrequencyOptionThreeId;
+            calisthenicsOptionThree.value =
+              this._goodHabitCategoryValues.thirdFitnessCalisthenicsFrequencyValue;
+            calisthenicsOptionThree.textContent =
+              "Do Calisthenics 3 Days a Week";
+            calisthenicsSelect.appendChild(calisthenicsOptionThree);
+            const calisthenicsOptionFour = document.createElement(
+              this._goodHabitCategoryElements.optionElement
+            );
+            calisthenicsOptionFour.classList.add(
+              this._goodHabitCategoryElementClasses
+                .fitnessCalisthenicsOptionClass
+            );
+            calisthenicsOptionFour.id =
+              this._goodHabitCategoryIds.fitnessFrequencyOptionFourId;
+            calisthenicsOptionFour.value =
+              this._goodHabitCategoryValues.fourthFitnessCalisthenicsFrequencyValue;
+            calisthenicsOptionFour.textContent =
+              "Do Calisthenics 4 Days a Week";
+            calisthenicsSelect.appendChild(calisthenicsOptionFour);
+            const calisthenicsOptionFive = document.createElement(
+              this._goodHabitCategoryElements.optionElement
+            );
+            calisthenicsOptionFive.classList.add(
+              this._goodHabitCategoryElementClasses
+                .fitnessCalisthenicsOptionClass
+            );
+            calisthenicsOptionFive.id =
+              this._goodHabitCategoryIds.fitnessFrequencyOptionFiveId;
+            calisthenicsOptionFive.value =
+              this._goodHabitCategoryValues.fifthFitnessCalisthenicsFrequencyValue;
+            calisthenicsOptionFive.textContent = "Other";
+            calisthenicsSelect.appendChild(calisthenicsOptionFive);
+          } else if (fitnessSelect.value === "other") {
+            const fitnessOtherContainer = document.createElement(
+              this._goodHabitCategoryElements.containerElement
+            );
+            fitnessOtherContainer.id =
+              this._goodHabitCategoryIds.fitnessOtherFrequencyContainerId;
+            goodHabitForm.appendChild(fitnessOtherContainer);
+            const fitnessOtherLabel = document.createElement(
+              this._goodHabitCategoryElements.labelElement
+            );
+            fitnessOtherLabel.classList.add(
+              this._goodHabitCategoryElementClasses.fitnessOtherElementClass
+            );
+            fitnessOtherLabel.id =
+              this._goodHabitCategoryIds.fitnessFrequencyLabelId;
+            fitnessOtherLabel.setAttribute(
+              "for",
+              this._goodHabitCategoryIds.fitnessFrequencyOtherInput
+            );
+            fitnessOtherLabel.textContent =
+              "What is the name of your fitness habit?";
+            fitnessOtherContainer.appendChild(fitnessOtherLabel);
+            const fitnessOtherInput = document.createElement(
+              this._goodHabitCategoryElements.inputElement
+            );
+            fitnessOtherInput.classList.add(
+              this._goodHabitCategory._goodHabitCategoryElementClasses
+                .fitnessOtherElementClass
+            );
+            fitnessOtherInput.id =
+              this._goodHabitCategoryIds.fitnessFrequencyOtherInput;
+            fitnessOtherContainer.appendChild(fitnessOtherInput);
+          }
+        });
