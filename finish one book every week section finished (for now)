@@ -1,0 +1,409 @@
+else if (readingSelect.value === "onceaWeek") {
+            const weeklyReadingContainer = document.createElement(
+              this._goodHabitCategoryElements.containerElement
+            );
+            weeklyReadingContainer.id =
+              this._goodHabitCategoryContainerIds.readingWeeklyContainerId;
+            goodHabitForm.appendChild(weeklyReadingContainer);
+            const weeklyReadingLabel = document.createElement(
+              this._goodHabitCategoryElements.labelElement
+            );
+            weeklyReadingLabel.classList.add(
+              this._goodHabitCategoryElementClasses.readingWeeklyElementClass
+            );
+            weeklyReadingLabel.id =
+              this._goodHabitCategoryIds.readingCheckboxLabelId;
+            weeklyReadingLabel.textContent =
+              "You chose to read weekly! What would you like to track?";
+            weeklyReadingContainer.appendChild(weeklyReadingLabel);
+            const weeklyReadingCheck = document.createElement(
+              this._goodHabitCategoryElements.labelElement
+            );
+            weeklyReadingCheck.id =
+              this._goodHabitCategoryIds.weeklyReadingCheck;
+            weeklyReadingCheck.classList.add(
+              this._goodHabitCategoryElementClasses.readingWeeklyElementClass
+            );
+            weeklyReadingCheck.textContent = "Please check all that apply";
+            weeklyReadingContainer.appendChild(weeklyReadingCheck);
+            const weeklyReadingCheckBoxLabelOne = document.createElement(
+              this._goodHabitCategoryElements.labelElement
+            );
+            weeklyReadingCheckBoxLabelOne.classList.add(
+              this._goodHabitCategoryElementClasses
+                .readingWeeklyCheckBoxOneClass
+            );
+            weeklyReadingCheckBoxLabelOne.id =
+              this._goodHabitCategoryIds.readingCheckBoxOptionOneLabel;
+            weeklyReadingCheckBoxLabelOne.setAttribute(
+              "for",
+              this._goodHabitCategoryIds.readingCheckBoxOptionOne
+            );
+            weeklyReadingCheckBoxLabelOne.textContent =
+              "How Many Books You Read Weekly";
+            weeklyReadingContainer.appendChild(weeklyReadingCheckBoxLabelOne);
+            const weeklyReadingCheckBoxOne = document.createElement(
+              this._goodHabitCategoryElements.inputElement
+            );
+            weeklyReadingCheckBoxOne.type =
+              this._goodHabitCategoryElements.checkboxType;
+            weeklyReadingCheckBoxOne.classList.add(
+              this._goodHabitCategoryElementClasses
+                .readingWeeklyCheckBoxOneClass
+            );
+            weeklyReadingCheckBoxOne.id =
+              this._goodHabitCategoryIds.readingCheckBoxOptionOne;
+            weeklyReadingCheckBoxOne.name =
+              this._goodHabitCategoryNames.readingCheckBoxTwoName;
+            weeklyReadingCheckBoxOne.value =
+              this._goodHabitCategoryValues.firstReadingWeeklyValue;
+            weeklyReadingContainer.appendChild(weeklyReadingCheckBoxOne);
+            const weeklyReadingCheckBoxLabelTwo = document.createElement(
+              this._goodHabitCategoryElements.labelElement
+            );
+            weeklyReadingCheckBoxLabelTwo.classList.add(
+              this._goodHabitCategoryElementClasses
+                .readingWeeklyCheckBoxTwoClass
+            );
+            weeklyReadingCheckBoxLabelTwo.id =
+              this._goodHabitCategoryIds.readingCheckBoxOptionTwo;
+            weeklyReadingCheckBoxLabelTwo.setAttribute(
+              "for",
+              this._goodHabitCategoryIds.readingCheckBoxOptionTwo
+            );
+            weeklyReadingCheckBoxLabelTwo.textContent =
+              "How Many Words You Learn Weekly";
+            weeklyReadingContainer.appendChild(weeklyReadingCheckBoxLabelTwo);
+            const weeklyReadingCheckBoxTwo = document.createElement(
+              this._goodHabitCategoryElements.inputElement
+            );
+            weeklyReadingCheckBoxTwo.classList.add(
+              this._goodHabitCategoryElementClasses
+                .readingWeeklyCheckBoxTwoClass
+            );
+            weeklyReadingCheckBoxTwo.id =
+              this._goodHabitCategoryIds.readingCheckBoxOptionTwo;
+            weeklyReadingCheckBoxTwo.type =
+              this._goodHabitCategoryElements.checkboxType;
+            weeklyReadingCheckBoxTwo.value =
+              this._goodHabitCategoryValues.secondReadingWeeklyValue;
+            weeklyReadingCheckBoxTwo.name =
+              this._goodHabitCategoryNames.readingCheckBoxTwoName;
+            weeklyReadingContainer.appendChild(weeklyReadingCheckBoxTwo);
+            const weeklyReadingCheckBoxLabelThree = document.createElement(
+              this._goodHabitCategoryElements.labelElement
+            );
+            weeklyReadingCheckBoxLabelThree.classList.add(
+              this._goodHabitCategoryElementClasses
+                .readingWeeklyCheckBoxThreeClass
+            );
+            weeklyReadingCheckBoxLabelThree.id =
+              this._goodHabitCategoryIds.readingCheckBoxOptionThree;
+            weeklyReadingCheckBoxLabelThree.setAttribute(
+              "for",
+              this._goodHabitCategoryIds.readingCheckBoxOptionThree
+            );
+            weeklyReadingCheckBoxLabelThree.textContent =
+              "How Many Pages You Read Weekly";
+            weeklyReadingContainer.appendChild(weeklyReadingCheckBoxLabelThree);
+            const weeklyReadingCheckBoxThree = document.createElement(
+              this._goodHabitCategoryElements.inputElement
+            );
+            weeklyReadingCheckBoxThree.classList.add(
+              this._goodHabitCategoryElementClasses
+                .readingWeeklyCheckBoxThreeClass
+            );
+            weeklyReadingCheckBoxThree.id =
+              this._goodHabitCategoryIds.readingCheckBoxOptionThree;
+            weeklyReadingCheckBoxThree.type =
+              this._goodHabitCategoryElements.checkboxType;
+            weeklyReadingCheckBoxThree.name =
+              this._goodHabitCategoryNames.readingCheckBoxTwoName;
+            weeklyReadingCheckBoxThree.value =
+              this._goodHabitCategoryValues.thirdReadingWeeklyValue;
+            weeklyReadingContainer.appendChild(weeklyReadingCheckBoxThree);
+            const weeklyReadingCheckBoxLabelFour = document.createElement(
+              this._goodHabitCategoryElements.labelElement
+            );
+            weeklyReadingCheckBoxLabelFour.classList.add(
+              this._goodHabitCategoryElementClasses
+                .readingWeeklyCheckBoxFourClass
+            );
+            weeklyReadingCheckBoxLabelFour.id =
+              this._goodHabitCategoryIds.readingCheckBoxOptionFourLabel;
+            weeklyReadingCheckBoxLabelFour.textContent =
+              "How Many Words You Read Weekly (estimate)";
+            weeklyReadingCheckBoxLabelFour.setAttribute(
+              "for",
+              this._goodHabitCategoryIds.readingCheckBoxOptionFour
+            );
+            weeklyReadingContainer.appendChild(weeklyReadingCheckBoxLabelFour);
+            const weeklyReadingCheckBoxFour = document.createElement(
+              this._goodHabitCategoryElements.inputElement
+            );
+            weeklyReadingCheckBoxFour.classList.add(
+              this._goodHabitCategoryElementClasses
+                .readingWeeklyCheckBoxFourClass
+            );
+            weeklyReadingCheckBoxFour.id =
+              this._goodHabitCategoryIds.readingCheckBoxOptionFour;
+            weeklyReadingCheckBoxFour.type =
+              this._goodHabitCategoryElements.checkboxType;
+            weeklyReadingCheckBoxFour.name =
+              this._goodHabitCategoryNames.readingCheckBoxTwoName;
+            weeklyReadingCheckBoxFour.value =
+              this._goodHabitCategoryValues.fourthReadingWeeklyValue;
+            weeklyReadingContainer.appendChild(weeklyReadingCheckBoxFour);
+            const weeklyReadingCheckBoxFiveLabel = document.createElement(
+              this._goodHabitCategoryElements.labelElement
+            );
+            weeklyReadingCheckBoxFiveLabel.classList.add(
+              this._goodHabitCategoryElementClasses
+                .readingWeeklyCheckBoxFiveClass
+            );
+            weeklyReadingCheckBoxFiveLabel.id =
+              this._goodHabitCategoryIds.readingCheckBoxOptionFiveLabel;
+            weeklyReadingCheckBoxFiveLabel.setAttribute(
+              "for",
+              this._goodHabitCategoryIds.readingCheckBoxOptionFive
+            );
+            weeklyReadingCheckBoxFiveLabel.textContent = "Other";
+            weeklyReadingContainer.appendChild(weeklyReadingCheckBoxFiveLabel);
+            const weeklyReadingCheckBoxFive = document.createElement(
+              this._goodHabitCategoryElements.inputElement
+            );
+            weeklyReadingCheckBoxFive.classList.add(
+              this._goodHabitCategoryElementClasses.readingCheckBoxOptionFive
+            );
+            weeklyReadingCheckBoxFive.id =
+              this._goodHabitCategoryIds.weeklyReadingCheckBoxFive;
+            weeklyReadingCheckBoxFive.type =
+              this._goodHabitCategoryElements.checkboxType;
+            weeklyReadingCheckBoxFive.name =
+              this._goodHabitCategoryNames.readingCheckBoxTwoName;
+            weeklyReadingCheckBoxFive.value =
+              this._goodHabitCategoryValues.fifthReadingWeeklyValue;
+            weeklyReadingContainer.appendChild(weeklyReadingCheckBoxFive);
+          } else if (readingSelect.value === "finishOneBookEveryWeek") {
+            console.log("value");
+            const finishOneBookEveryWeekContainer = document.createElement(
+              this._goodHabitCategoryElements.containerElement
+            );
+
+            finishOneBookEveryWeekContainer.id =
+              this._goodHabitCategoryContainerIds.finishOneBookEveryWeekContainerId;
+            goodHabitForm.appendChild(finishOneBookEveryWeekContainer);
+            const finishOneBookEveryWeekLabel = document.createElement(
+              this._goodHabitCategoryElements.labelElement
+            );
+            finishOneBookEveryWeekLabel.classList.add(
+              this._goodHabitCategoryElementClasses
+                .finishOneBookEveryWeekElementClass
+            );
+            finishOneBookEveryWeekLabel.id =
+              this._goodHabitCategoryIds.readingCheckboxLabelId;
+            finishOneBookEveryWeekLabel.textContent =
+              "You chose to finish one book every week! What do you want to track?";
+            finishOneBookEveryWeekContainer.appendChild(
+              finishOneBookEveryWeekLabel
+            );
+            const finishOneBookEveryWeekCheckLabel = document.createElement(
+              this._goodHabitCategoryElements.labelElement
+            );
+            finishOneBookEveryWeekCheckLabel.classList.add(
+              this._goodHabitCategoryElementClasses
+                .finishOneBookEveryWeekElementClass
+            );
+            finishOneBookEveryWeekCheckLabel.id =
+              this._goodHabitCategoryIds.readingCheckBoxCheckLabel;
+            finishOneBookEveryWeekCheckLabel.textContent =
+              "Check all that apply";
+            finishOneBookEveryWeekContainer.appendChild(
+              finishOneBookEveryWeekCheckLabel
+            );
+            const finishOneBookEveryWeekCheckBoxOneLabel =
+              document.createElement(
+                this._goodHabitCategoryElements.labelElement
+              );
+            finishOneBookEveryWeekCheckBoxOneLabel.classList.add(
+              this._goodHabitCategoryElementClasses
+                .finishOneBookEveryWeekCheckBoxOneClass
+            );
+            finishOneBookEveryWeekCheckBoxOneLabel.id =
+              this._goodHabitCategoryIds.readingCheckBoxOptionOneLabel;
+            finishOneBookEveryWeekCheckBoxOneLabel.textContent =
+              "Words Learned";
+            finishOneBookEveryWeekCheckBoxOneLabel.setAttribute(
+              "for",
+              this._goodHabitCategoryIds.readingCheckBoxOptionOne
+            );
+            finishOneBookEveryWeekContainer.appendChild(
+              finishOneBookEveryWeekCheckBoxOneLabel
+            );
+            const finishOneBookEveryWeekCheckBoxOne = document.createElement(
+              this._goodHabitCategoryElements.inputElement
+            );
+            finishOneBookEveryWeekCheckBoxOne.classList.add(
+              this._goodHabitCategoryElementClasses
+                .finishOneBookEveryWeekCheckBoxOneClass
+            );
+            finishOneBookEveryWeekCheckBoxOne.id =
+              this._goodHabitCategoryIds.readingCheckBoxOptionOne;
+            finishOneBookEveryWeekCheckBoxOne.type =
+              this._goodHabitCategoryElements.checkboxType;
+            finishOneBookEveryWeekCheckBoxOne.name =
+              this._goodHabitCategoryNames.readingCheckBoxThreeName;
+            finishOneBookEveryWeekCheckBoxOne.value =
+              this._goodHabitCategoryValues.firstFinishOneBookEveryWeekValue;
+            finishOneBookEveryWeekContainer.appendChild(
+              finishOneBookEveryWeekCheckBoxOne
+            );
+            const finishOneBookEveryWeekCheckBoxTwoLabel =
+              document.createElement(
+                this._goodHabitCategoryElements.labelElement
+              );
+            finishOneBookEveryWeekCheckBoxTwoLabel.classList.add(
+              this._goodHabitCategoryElementClasses
+                .finishOneBookEveryWeekCheckBoxTwoClass
+            );
+            finishOneBookEveryWeekCheckBoxTwoLabel.id =
+              this._goodHabitCategoryIds.readingCheckBoxOptionTwoLabel;
+            finishOneBookEveryWeekCheckBoxTwoLabel.setAttribute(
+              "for",
+              this._goodHabitCategoryIds.readingCheckBoxOptionTwo
+            );
+            finishOneBookEveryWeekCheckBoxTwoLabel.textContent =
+              "Book Page Count";
+            finishOneBookEveryWeekContainer.appendChild(
+              finishOneBookEveryWeekCheckBoxTwoLabel
+            );
+            const finishOneBookEveryWeekCheckBoxTwo = document.createElement(
+              this._goodHabitCategoryElements.inputElement
+            );
+            finishOneBookEveryWeekCheckBoxTwo.classList.add(
+              this._goodHabitCategoryElementClasses
+                .finishOneBookEveryWeekCheckBoxTwoClass
+            );
+            finishOneBookEveryWeekCheckBoxTwo.id =
+              this._goodHabitCategoryIds.readingCheckBoxOptionTwo;
+            finishOneBookEveryWeekCheckBoxTwo.name =
+              this._goodHabitCategoryNames.readingCheckBoxThreeName;
+            finishOneBookEveryWeekCheckBoxTwo.type =
+              this._goodHabitCategoryElements.checkboxType;
+            finishOneBookEveryWeekCheckBoxTwo.value =
+              this._goodHabitCategoryValues.secondFinishOneBookEveryWeekValue;
+            finishOneBookEveryWeekContainer.appendChild(
+              finishOneBookEveryWeekCheckBoxTwo
+            );
+            const finishOneBookEveryWeekCheckBoxThreeLabel =
+              document.createElement(
+                this._goodHabitCategoryElements.labelElement
+              );
+            finishOneBookEveryWeekCheckBoxThreeLabel.classList.add(
+              this._goodHabitCategoryElementClasses
+                .finishOneBookEveryWeekCheckBoxThreeClass
+            );
+            finishOneBookEveryWeekCheckBoxThreeLabel.id =
+              this._goodHabitCategoryIds.readingCheckBoxOptionThreeLabel;
+            finishOneBookEveryWeekCheckBoxThreeLabel.setAttribute(
+              "for",
+              this._goodHabitCategoryIds.readingCheckBoxOptionThree
+            );
+            finishOneBookEveryWeekCheckBoxThreeLabel.textContent =
+              "Book Difficulty";
+            finishOneBookEveryWeekContainer.appendChild(
+              finishOneBookEveryWeekCheckBoxThreeLabel
+            );
+            const finishOneBookEveryWeekCheckBoxThree = document.createElement(
+              this._goodHabitCategoryElements.inputElement
+            );
+            finishOneBookEveryWeekCheckBoxThree.classList.add(
+              this._goodHabitCategoryElementClasses
+                .finishOneBookEveryWeekCheckBoxThreeClass
+            );
+            finishOneBookEveryWeekCheckBoxThree.id =
+              this._goodHabitCategoryIds.readingCheckBoxOptionThree;
+            finishOneBookEveryWeekCheckBoxThree.type =
+              this._goodHabitCategoryElements.checkboxType;
+            finishOneBookEveryWeekCheckBoxThree.value =
+              this._goodHabitCategoryValues.thirdFinishOneBookEveryWeekValue;
+            finishOneBookEveryWeekCheckBoxThree.name =
+              this._goodHabitCategoryNames.readingCheckBoxThreeName;
+            finishOneBookEveryWeekContainer.appendChild(
+              finishOneBookEveryWeekCheckBoxThree
+            );
+            const finishOneBookEveryWeekCheckBoxFourLabel =
+              document.createElement(
+                this._goodHabitCategoryElements.labelElement
+              );
+
+            finishOneBookEveryWeekCheckBoxFourLabel.classList.add(
+              this._goodHabitCategoryElementClasses
+                .finishOneBookEveryWeekCheckBoxFourClass
+            );
+            finishOneBookEveryWeekCheckBoxFourLabel.id =
+              this._goodHabitCategoryIds.readingCheckBoxOptionFourLabel;
+            finishOneBookEveryWeekCheckBoxFourLabel.setAttribute(
+              "for",
+              this._goodHabitCategoryIds.readingCheckBoxOptionFour
+            );
+            finishOneBookEveryWeekCheckBoxFourLabel.textContent =
+              "How Long It Took To Finish The Book";
+            finishOneBookEveryWeekContainer.appendChild(
+              finishOneBookEveryWeekCheckBoxFourLabel
+            );
+            const finishOneBookEveryWeekCheckBoxFour = document.createElement(
+              this._goodHabitCategoryElements.inputElement
+            );
+            finishOneBookEveryWeekCheckBoxFour.classList.add(
+              this._goodHabitCategoryElementClasses
+                .finishOneBookEveryWeekCheckBoxFourClass
+            );
+            finishOneBookEveryWeekCheckBoxFour.id =
+              this._goodHabitCategoryIds.readingCheckBoxOptionFour;
+            finishOneBookEveryWeekCheckBoxFour.type =
+              this._goodHabitCategoryElements.checkboxType;
+            finishOneBookEveryWeekCheckBoxFour.name =
+              this._goodHabitCategoryNames.readingCheckBoxThreeName;
+            finishOneBookEveryWeekCheckBoxFour.value =
+              this._goodHabitCategoryValues.fourthFinishOneBookEveryWeekValue;
+            finishOneBookEveryWeekContainer.appendChild(
+              finishOneBookEveryWeekCheckBoxFour
+            );
+            const finishOneBookEveryWeekCheckBoxFiveLabel =
+              document.createElement(
+                this._goodHabitCategoryElements.labelElement
+              );
+            finishOneBookEveryWeekCheckBoxFiveLabel.classList.add(
+              this._goodHabitCategoryElementClasses
+                .finishOneBookEveryWeekCheckBoxFiveClass
+            );
+            finishOneBookEveryWeekCheckBoxFiveLabel.id =
+              this._goodHabitCategoryIds.readingCheckBoxOptionFive;
+            finishOneBookEveryWeekCheckBoxFiveLabel.setAttribute(
+              "for",
+              this._goodHabitCategoryIds.readingCheckBoxOptionFiveLabel
+            );
+            finishOneBookEveryWeekCheckBoxFiveLabel.textContent = "Other";
+            finishOneBookEveryWeekContainer.appendChild(
+              finishOneBookEveryWeekCheckBoxFiveLabel
+            );
+            const finishOneBookEveryWeekCheckBoxFive = document.createElement(
+              this._goodHabitCategoryElements.inputElement
+            );
+            finishOneBookEveryWeekCheckBoxFive.classList.add(
+              this._goodHabitCategoryElementClasses
+                .finishOneBookEveryWeekCheckBoxFiveClass
+            );
+            finishOneBookEveryWeekCheckBoxFive.id =
+              this._goodHabitCategoryIds.readingCheckBoxOptionFive;
+            finishOneBookEveryWeekCheckBoxFive.type =
+              this._goodHabitCategoryElements.checkboxType;
+            finishOneBookEveryWeekCheckBoxFive.name =
+              this._goodHabitCategoryNames.readingCheckBoxThreeName;
+            finishOneBookEveryWeekCheckBoxFive.value =
+              this._goodHabitCategoryValues.fifthFinishOneBookEveryWeekValue;
+            finishOneBookEveryWeekContainer.appendChild(
+              finishOneBookEveryWeekCheckBoxFive
+            );
+          }
